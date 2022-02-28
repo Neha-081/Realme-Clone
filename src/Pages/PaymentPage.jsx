@@ -110,12 +110,12 @@ const PaymentPage = () => {
             </select>
           </div>
           <div className="cards">
-            <img src="https://utils.imimg.com/payments/pwim_files/pwim_modes_v5.png" />
+            <img alt="https://utils.imimg.com/payments/pwim_files/pwim_modes_v5.png" src="https://utils.imimg.com/payments/pwim_files/pwim_modes_v5.png" />
           </div>
         </div>
         <p id="exp"></p>
       </div>
-      <a id="payment" onClick={handlePayment}>
+      <a href='###' id="payment" onClick={handlePayment}>
         Pay Now
       </a>
     </div>
