@@ -9,14 +9,14 @@
       color: #ffc915;
   }
   
-  body {
+  .payment-container-main {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .container {
+  .payment-container {
     width: 750px;
     height: 500px;
     /* border: 1px solid; */
@@ -29,7 +29,7 @@
       0.3em 0.3em 1em rgba(0, 0, 0, 0.25);
   }
   
-  .container h4 {
+  .payment-container h4 {
     text-align: center;
     color: #00a699;
     background-color: #eceff1;
@@ -65,7 +65,7 @@
     padding: 10px 20px;
   }
   
-  .container a {
+  .payment-container a {
     background-color: #00a699;
     color: white;
     text-align: center;
@@ -78,7 +78,7 @@
     margin-left: 150px;
   }
   
-  .container a:hover {
+  .payment-container a:hover {
     background-color: dodgerblue;
   }
   
@@ -96,7 +96,7 @@
     font-size: 13px;
     color: red;
   }
-  .container h3 {
+  .payment-container h3 {
     text-align: left;
     padding-bottom: 2px;
   }

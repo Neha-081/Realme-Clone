@@ -1,37 +1,40 @@
-import { useState } from "react";
+import React , { useState } from "react";
 import "../styles/payment.css";
 
-export const PaymentPage=()=>{
-  const [passWord, setPassWord] = useState([]);
-  const [passDes, setPassDes] = useState();
+const PaymentPage = () => {
 
-  const [cardNumber, setCardNumber] = useState([]);
-  const [cardNumberValid, setCardNumberValid] = useState();
+    const [passWord, setPassWord] = useState([]);
+    const [passDes, setPassDes] = useState();
+  
+    const [cardNumber, setCardNumber] = useState([]);
+    const [cardNumberValid, setCardNumberValid] = useState();
+  
+    const passHandleChange = (e) => {
+      setPassWord(e.target.value);
+    };
+    const cardNumberHandleChange = (e) => {
+      setCardNumber(e.target.value);
+    };
+  
+    const handlePayment = () => {
+      if (passWord.length !== 3) {
+        setPassDes("*Invalid Credential");
+      }
+      if (passWord.length === 3) {
+        setPassDes("");
+      }
+      if (cardNumber.length !== 16) {
+        setCardNumberValid("*Invalid Card Number");
+      }
+      if (cardNumber.length === 16) {
+        setCardNumberValid("");
+      }
+    };
 
-  const passHandleChange = (e) => {
-    setPassWord(e.target.value);
-  };
-  const cardNumberHandleChange = (e) => {
-    setCardNumber(e.target.value);
-  };
 
-  const handlePayment = () => {
-    if (passWord.length !== 3) {
-      setPassDes("*Invalid Credential");
-    }
-    if (passWord.length === 3) {
-      setPassDes("");
-    }
-    if (cardNumber.length !== 16) {
-      setCardNumberValid("*Invalid Card Number");
-    }
-    if (cardNumber.length === 16) {
-      setCardNumberValid("");
-    }
-  };
-
-  return (
-    <div className="container">
+  return  (
+   <div className="payment-container-main">
+        <div className="payment-container">
       <h1>Make Your Payment Now</h1>
       <div className="first-row">
         <div className="owner">
@@ -107,16 +110,17 @@ export const PaymentPage=()=>{
             </select>
           </div>
           <div className="cards">
-            <img src="https://utils.imimg.com/payments/pwim_files/pwim_modes_v5.png" alt="" />
+            <img src="https://utils.imimg.com/payments/pwim_files/pwim_modes_v5.png" />
           </div>
         </div>
         <p id="exp"></p>
       </div>
-      <a id="payment" onClick={handlePayment} href="##" >
+      <a id="payment" onClick={handlePayment}>
         Pay Now
       </a>
     </div>
+   </div>
   );
-};
+}
 
-// export default PaymentPage;
+export default PaymentPage;
