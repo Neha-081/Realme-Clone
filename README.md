@@ -16,7 +16,7 @@
   
 # Technology
 
-
+- React, Redux, Firebase
 - **Client:** HTML5 and CSS
 
 - **Server:** Javascript 
