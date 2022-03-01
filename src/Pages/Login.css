@@ -48,7 +48,13 @@
     font-weight: 100;
     color: white;
     width: 190px;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
+    outline: none;
+    font-weight: bold;
+  }
+  #logreg-forms .social-btn:hover{
+    background-color: rgb(230, 25, 25);
+    transition: 0.4s;
   }
   
   #logreg-forms a {
@@ -95,6 +101,10 @@
     margin-top:70px;
 border-radius:10px;
 color:grey;
+  }.block-signin:hover{
+    background-color: rgb(79, 187, 79);
+    color: white;
+    transition: 0.4s;
   }
   .block-newsignup{
     color:grey;
@@ -103,6 +113,10 @@ color:grey;
     border:none;
     outline:none;
 border-radius:10px;
+  }.block-newsignup:hover{
+    background-color: gray;
+    color: white;
+    transition: 0.4s;
   }
   .signwithpass{
     font-size: 16px;
@@ -111,6 +125,10 @@ border-radius:10px;
   .otherstyle{
     font-size: 12px;
   }
+
+ 
+
+
   /* Mobile */
   
   @media screen and (max-width: 500px) {
