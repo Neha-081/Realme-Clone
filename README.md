@@ -45,21 +45,49 @@
    1. This is the landing page where user have facility to see top Realme.
 
 
+  - Corousel 
+
  ![realmeCorousel](https://user-images.githubusercontent.com/92449229/155886466-e7696c39-0e29-4d42-be08-3f6cee4b0f37.png)
+ 
+ 
+ -------------------
+ 
+ - Navbar
+ 
+ ![realmeNav](https://user-images.githubusercontent.com/87421798/156198268-82a309f8-897b-4629-9bed-46505428f648.png)
+ 
+  -------------------
     
+- Activity Section
 
 ![Screenshot 2022-02-27 at 9 05 12 PM](https://user-images.githubusercontent.com/92449229/155889293-afd3c1e4-4d38-4346-b46e-2ef388f77773.png)
 
+ -------------------
 
+
+- Accessories Section
 
 ![Screenshot 2022-02-27 at 9 04 51 PM](https://user-images.githubusercontent.com/92449229/155889301-757a144f-1766-492a-b111-b5727aeacc25.png)
 
+ -------------------
+ 
+- Products
+
 ![Screenshot 2022-02-27 at 9 03 36 PM](https://user-images.githubusercontent.com/92449229/155889298-2db451a6-3279-45cb-857c-eecfafce3b11.png)
+
+ -------------------
+ 
+- SmartPhones
 
 ![Screenshot 2022-02-27 at 9 04 07 PM](https://user-images.githubusercontent.com/92449229/155889300-0c609aa0-d33e-4ffd-baf3-012c2d982987.png)
 
+ -------------------
+
+- Footer
  
  ![realmeFooter](https://user-images.githubusercontent.com/92449229/155886467-11746495-ee28-4916-8477-2471d03ca5d4.png)
+ 
+  -------------------
  
  
 
@@ -116,16 +144,20 @@
   
 ## Authors
 
-#### Santosh Konappanavar
-> Github: [Santosh Konappanavar](https://github.com/Santosh-Konappanavar)
-> 
-> LinkedIn: [Santosh Konappanavar](https://www.linkedin.com/in/santosh-konappanavar/)
 
 
 #### Neha Prajapati
 > Github: [Neha Prajapati](https://github.com/Neha-081)
 > 
 > LinkedIn: [Neha Prajapati](https://www.linkedin.com/in/neha-prajapati-1150/)
+
+
+
+#### Santosh Konappanavar
+> Github: [Santosh Konappanavar](https://github.com/Santosh-Konappanavar)
+> 
+> LinkedIn: [Santosh Konappanavar](https://www.linkedin.com/in/santosh-konappanavar/)
+
 
 
 #### Amruta Banait
