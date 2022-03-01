@@ -8,12 +8,12 @@
 
 ## Demo
 
->Link - ## Demo
 
 >Link - https://realme-clone-081.netlify.app/
 
 
-> 
+## Realme 
+
 > [Realme website](https://www.realme.com/in/)
  
 > We have cloned the Realme website as project of our construct week at **Masai School**.
@@ -137,4 +137,4 @@
 #### Anowar Hossain
 > Github: [Anowar Hossain](https://github.com/anowar265)
 > 
-> LinkedIn: [https://www.linkedin.com/in/hossainanowaroffical/)
+> LinkedIn: [Anowar Hossain][https://www.linkedin.com/in/hossainanowaroffical/)
