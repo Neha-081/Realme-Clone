@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { Footer } from "../NavAndFooter/Footer";
 import { Header } from "../NavAndFooter/Header";
 import "../../styles/product.css";
-import { Cartbtn } from "../../Pages/Cartbtn";
+import  Cartbtn  from "../../Pages/Cartbtn";
 
 function HomeProdDetail() {
   const { data } = useSelector((store) => store.data.homeData);

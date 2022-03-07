@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 // import { useSelector } from 'react-redux';
 // import { useDispatch } from 'react-redux';
 
-export const Cartbtn = () => {
+ const Cartbtn = () => {
   // const { data } = useSelector((store) => store.data.homeData);
   // const dispatch = useDispatch();
   // console.log(data);
@@ -61,4 +61,6 @@ export const Cartbtn = () => {
   )
 
 }
+
+export default Cartbtn
 

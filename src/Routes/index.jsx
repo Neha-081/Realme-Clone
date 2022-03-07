@@ -7,7 +7,7 @@ import Category from '../Pages/Category';
 import ErrorPage from '../Pages/ErrorPage';
 import ProtectedRoutes from './ProtectedRoutes';
 import HomeProdDetail from '../Components/HomePage/homeProdDetail';
-import { Cartbtn } from '../Pages/Cartbtn';
+import  Cartbtn  from '../Pages/Cartbtn';
 import Login from '../Pages/Login';
 import Register from '../Pages/Register';
 import PaymentPage from '../Pages/PaymentPage';
