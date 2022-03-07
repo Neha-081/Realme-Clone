@@ -1,19 +1,13 @@
 <img width="200" alt="realme-logo" src="https://user-images.githubusercontent.com/92449229/155888190-d6be177b-ccd9-4e26-a46f-7297a5fada35.png">
 
 
-> Realme is a technology brand that specializes in providing technology products with a comprehensive superior experience for the youth.realme has become world’s No.6 smartphone brand in Q2 2021 with a holistic smartphone portfolio from entry-level up to flagship segments including GT Series, Number Series, Narzo Series and C Series. As a 5G leader in India,realme is the first to bring a 5G phone into the Indian market.
+> realme is a technology brand that specializes in providing technology products with a comprehensive superior experience for the youth.realme has become world’s No.6 smartphone brand in Q2 2021 with a holistic smartphone portfolio from entry-level up to flagship segments including GT Series, Number Series, Narzo Series and C Series. As a 5G leader in India,realme is the first to bring a 5G phone into the Indian market.
 
 
 
 
-## Demo
 
-
->Link - https://realme-clone-081.netlify.app/
-
-
-## Realme 
-
+> 
 > [Realme website](https://www.realme.com/in/)
  
 > We have cloned the Realme website as project of our construct week at **Masai School**.
@@ -22,7 +16,7 @@
   
 # Technology
 
-- React, Redux, Firebase
+
 - **Client:** HTML5 and CSS
 
 - **Server:** Javascript 
@@ -45,49 +39,21 @@
    1. This is the landing page where user have facility to see top Realme.
 
 
-  - Corousel 
-
  ![realmeCorousel](https://user-images.githubusercontent.com/92449229/155886466-e7696c39-0e29-4d42-be08-3f6cee4b0f37.png)
- 
- 
- -------------------
- 
- - Navbar
- 
- ![realmeNav](https://user-images.githubusercontent.com/87421798/156198268-82a309f8-897b-4629-9bed-46505428f648.png)
- 
-  -------------------
     
-- Activity Section
 
 ![Screenshot 2022-02-27 at 9 05 12 PM](https://user-images.githubusercontent.com/92449229/155889293-afd3c1e4-4d38-4346-b46e-2ef388f77773.png)
 
- -------------------
 
-
-- Accessories Section
 
 ![Screenshot 2022-02-27 at 9 04 51 PM](https://user-images.githubusercontent.com/92449229/155889301-757a144f-1766-492a-b111-b5727aeacc25.png)
 
- -------------------
- 
-- Products
-
 ![Screenshot 2022-02-27 at 9 03 36 PM](https://user-images.githubusercontent.com/92449229/155889298-2db451a6-3279-45cb-857c-eecfafce3b11.png)
-
- -------------------
- 
-- SmartPhones
 
 ![Screenshot 2022-02-27 at 9 04 07 PM](https://user-images.githubusercontent.com/92449229/155889300-0c609aa0-d33e-4ffd-baf3-012c2d982987.png)
 
- -------------------
-
-- Footer
  
  ![realmeFooter](https://user-images.githubusercontent.com/92449229/155886467-11746495-ee28-4916-8477-2471d03ca5d4.png)
- 
-  -------------------
  
  
 
@@ -140,24 +106,25 @@
 
 
 
+  
+## Demo
+
+>Link - [Realme]()
+
 
   
 ## Authors
-
-
-
-#### Neha Prajapati
-> Github: [Neha Prajapati](https://github.com/Neha-081)
-> 
-> LinkedIn: [Neha Prajapati](https://www.linkedin.com/in/neha-prajapati-1150/)
-
-
 
 #### Santosh Konappanavar
 > Github: [Santosh Konappanavar](https://github.com/Santosh-Konappanavar)
 > 
 > LinkedIn: [Santosh Konappanavar](https://www.linkedin.com/in/santosh-konappanavar/)
 
+
+#### Neha Prajapati
+> Github: [Neha Prajapati](https://github.com/Neha-081)
+> 
+> LinkedIn: [Neha Prajapati](https://www.linkedin.com/in/neha-prajapati-1150/)
 
 
 #### Amruta Banait
@@ -169,4 +136,4 @@
 #### Anowar Hossain
 > Github: [Anowar Hossain](https://github.com/anowar265)
 > 
-> LinkedIn: [Anowar Hossain](https://www.linkedin.com/in/hossainanowaroffical/)
+> LinkedIn: [https://www.linkedin.com/in/hossainanowaroffical/)

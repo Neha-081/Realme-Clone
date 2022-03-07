@@ -1,0 +1,218 @@
+[
+    {
+      "id":1,
+        "image_url": "https://image01.realme.net/general/20210803/1627970794478.png",
+        "name": "realme C21Y",
+        "desc":"Triple Camera , Real performance",
+        "price": "9,499",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"discount ava."
+      },
+      {
+        "id":2,
+        "image_url": "https://image01.realme.net/general/20210519/1621424163546.png",
+        "name": "realme C25",
+        "desc":"Powerful Processor. 6000Ah Batt...",
+        "price": "11,999",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"cost of EMI"
+      },
+      {
+        "id":3,
+        "image_url": "https://image01.realme.net/general/20210928/1632817235526.png",
+        "name": "realme C25Y",
+        "desc":"50MP AI Camera. All-day Performa...",
+        "price": "10,999",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"No cost of EMI"
+      },
+      {
+        "id":4,
+        "image_url": "https://image01.realme.net/general/20210916/1631776707007.png",
+        "name": "realme narzo 50A",
+        "desc":"Mighty Performance Inside",
+        "price": "12,499",
+        "coupon1":"No cost of EMI",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":5,
+        "image_url": "https://image01.realme.net/general/20210903/1630653680914.png",
+        "name": "realme 8i",
+        "desc":"120Hz. Infinitely Smooth",
+        "price": "13,999",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"cost of EMI"
+      },
+      {
+        "id":6,
+        "image_url": "https://image01.realme.net/general/20210611/1623400675833.png",
+        "name": "realme narzo 30",
+        "desc":"Unleash Peak Performance",
+        "price": "15,499",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"No cost of EMI"
+      },
+      {
+        "id":7,
+        "image_url": "https://image01.realme.net/general/20210323/1616485282573.png",
+        "name": "realme 8",
+        "desc":"In Style. Capture Infinity",
+        "price": "15,999",
+        "coupon1":"No cost of EMI",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":8,
+        "image_url": "https://image01.realme.net/general/20210506/1620287407432.png",
+        "name": "realme 8",
+        "desc":"5G, Speed to Infinity",
+        "price": "16,499",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":9,
+        "image_url": "https://image01.realme.net/general/20220131/1643635116029.png",
+        "name": "realme 9 PRO+",
+        "desc":"CAPTURE THE LIGHT",
+        "price": "24,999",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"No cost of EMI"
+      },
+      {
+        "id":10,
+        "image_url": "https://image01.realme.net/general/20220217/1645105009176.png",
+        "name": "realme 9 PRO",
+        "desc":"CAPTURE THE LIGHT",
+        "price": "17,999",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":11,
+        "image_url": "https://image01.realme.net/general/20220126/1643190140852.png",
+        "name": "realme 9i",
+        "desc":"Next Level Power",
+        "price": "13,999",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":12,
+        "image_url": "https://image01.realme.net/general/20211116/1637046340070.png",
+        "name": "realme C25_Y",
+        "desc":"50MP AI Camera. All-day Performa...",
+        "price": "11,999",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":13,
+        "image_url": "https://image01.realme.net/general/20210916/1631776707007.png",
+        "name": "realme narzo 50A",
+        "desc":"Mighty Performance Inside",
+        "price": "12,499",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":14,
+        "image_url": "https://image01.realme.net/general/20210916/1631776407331.png",
+        "name": "realme narzo 50i",
+        "desc":"Mighty Performance Inside",
+        "price": "7,499",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":15,
+        "image_url": "https://image01.realme.net/general/20210913/1631506702085.png",
+        "name": "realme C25Y",
+        "desc":"50MP Ai Camera. All Performa...",
+        "price": "10,999",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":16,
+        "image_url": "https://image01.realme.net/general/20210903/1630653680914.png",
+        "name": "realme 8i",
+        "desc":"India;s First Helio G9 Processor",
+        "price": "13,999",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":17,
+        "image_url": "https://image01.realme.net/general/20211129/1638173907903.png",
+        "name": "realme GT Master Edition",
+        "desc":"Mastery beyond Speed",
+        "price": "29,999",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":18,
+        "image_url": "https://image01.realme.net/general/20210811/1628679174740.png",
+        "name": "realme GT 5G",
+        "desc":"Sheer Speed Flagship",
+        "price": "37,999",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":19,
+        "image_url": "https://image01.realme.net/general/20200629/1593436005199.jpg",
+        "name": "realme C11 2021",
+        "desc":"Bigger Battery. Larger Display.",
+        "price": "7,499",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":20,
+        "image_url": "https://image01.realme.net/general/20210609/1623253153556.png",
+        "name": "realme narzo 30",
+        "desc":"Unleash Peak Performance",
+        "price": "16,999",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":21,
+        "image_url": "https://image01.realme.net/general/20210903/1630653680914.png",
+        "name": "realme 8i",
+        "desc":"120Hz. Infinity Smooth",
+        "price": "13,999",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":22,
+        "image_url": "https://image01.realme.net/general/20200603/1591155797643.jpg",
+        "name": "realme X7 5G",
+        "desc":"Future at Full Speed",
+        "price": "26,999",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"Coins Discount up to ₹159"
+      },
+      {
+        "id":23,
+        "image_url": "https://image01.realme.net/general/20210715/1626360001826.png",
+        "name": "realme X7 5G",
+        "desc":"Future at Full Speed",
+        "price": "26,999",
+        "coupon1":"₹ 50% off on ₹1000",
+        "coupon2":"No cost of EMI"
+      },
+      {
+        "id":24,
+        "image_url": "https://image01.realme.net/general/20210715/1626360122986.png",
+        "name": "realme X7 5G",
+        "desc":"Future at Full Speed",
+        "price": "26,999",
+        "coupon1":"No cost of EMI",
+        "coupon2":"Coins Discount up to ₹159"
+      }
+  ]

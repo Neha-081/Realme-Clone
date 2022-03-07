@@ -1,41 +1,49 @@
 import React from "react";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { addItem, deleteItem  } from "../../redux/dataReducer/actions";
 import { Link, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Footer } from "../NavAndFooter/Footer";
 import { Header } from "../NavAndFooter/Header";
 import "../../styles/product.css";
+import { Cartbtn } from "../../Pages/Cartbtn";
 
 function HomeProdDetail() {
   const { data } = useSelector((store) => store.data.homeData);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
 
-  const [cartBtn, setcartBtn] = useState("Add to Cart");
+  // const [cartBtn, setcartBtn] = useState("Add to Cart");
+  const [cartData,setCartData]=useState([])
 
   const homeid = useParams();
-  console.log("homeid", homeid.homeid);
+  // console.log("homeid", homeid.homeid);
   const prodDetail = data.filter(
     (item) => Number(item.id) === Number(homeid.homeid)
   );
   const arr = prodDetail[0];
-  console.log("arr", arr);
-  const handleCart = (arr) => {
-    if (cartBtn === "Add to Cart") {
-      dispatch(addItem(arr));
-      setcartBtn("Remove from Cart");
-    } else {
-      dispatch(deleteItem(arr));
-      setcartBtn("Add to Cart");
-    }
-  };
+  // console.log("arr", arr);
+  // const handleCart = (arr) => {
+  //   if (cartBtn === "Add to Cart") {
+  //     dispatch(addItem(arr));
+  //     setcartBtn("Remove from Cart");
+  //   } else {
+  //     dispatch(deleteItem(arr));
+  //     setcartBtn("Add to Cart");
+  //   }
+  // };
+  // const handleCart=()=>{
+  //   setCartData(homeid.homeid)
+   
+  // }
+  console.log("cartData",cartData);
+
+ 
+
 
   return (
     <>
       <div>
-        <Header />
+        <Header/>
         <br />
 
         <div key={arr.id} className="allDetail">
@@ -67,8 +75,8 @@ function HomeProdDetail() {
                     </div>
                   </div>
                   <div className="cartsession">
-                    <button className="gray" onClick={() => handleCart(arr)}>
-                      {cartBtn}
+                    <button className="gray" onClick={() => setCartData(...cartData,homeid.homeid)} >
+                      Add to cart
                     </button>
                     <Link to="/payment">
                     <button className="yellow">
@@ -85,6 +93,7 @@ function HomeProdDetail() {
         <br />
       </div>
       <Footer />
+      <Cartbtn cartData={cartData}/>
     </>
   );
 }

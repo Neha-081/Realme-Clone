@@ -134,12 +134,17 @@ padding-top: 80px;
     border: 1px solid white;
     padding: 10px;
     width: 140px;
+    color: white;
+    border-radius: 0;
+    transition: 0.4s;
     background-color: transparent;
 }#lastimg button:hover{
     background-color: white;
     color: black;
 }.smartdiv{
     margin: 100px 200px 0 0;
+}.viewMore a{
+   margin-left: 400px;
 }
 
 
@@ -166,5 +171,7 @@ padding-top: 80px;
     }.activitydiv img{
         margin-right: 350px;
 
-    }
+    }.viewMore a{
+        margin-left: 0;
+     }
 }

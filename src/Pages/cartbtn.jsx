@@ -3,15 +3,25 @@ import cart from "../cart.json";
 import { Footer } from '../Components/NavAndFooter/Footer';
 import { Header } from '../Components/NavAndFooter/Header';
 import "../styles/tab.css"
+import { Link } from 'react-router-dom';
+// import { useSelector } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 
 export const Cartbtn = () => {
+  // const { data } = useSelector((store) => store.data.homeData);
+  // const dispatch = useDispatch();
+  // console.log(data);
 
-  const CartItem =(item)=>{
+
+  const CartItem =(item,{cartData})=>{
+    console.log("cartData",cartData);
+
+    
 
     return (
       <div className='px-3 my-5 bg-light rounded-3 hi'>
       <div className='container py-5 bye'>
-        <button  className='btn btn-primary float-end' >Buy Now </button>
+      
           <div className='row justify-content-center'>
   
             <div className='col-md-4'>
@@ -41,6 +51,8 @@ export const Cartbtn = () => {
           {cart.map(CartItem)}
           
         </div>
+        <h2 className='lead fw-bold'>Total Amount : $21498</h2>
+        <Link to="/payment"  > <button  className='btn btn-primary float-end' >Buy Now </button></Link>
     </div>
     <footer>
       <Footer/>

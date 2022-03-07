@@ -38,6 +38,16 @@ function TabGroup({ data }) {
               </a>
             </span>
           </li>
+          <li>
+          
+            <span className="viewMore">
+            <Link to="/phoneproducts"  style={{textDecoration:"none",color:"#777777"}}  >
+              
+                View More →
+              </Link>
+            </span>
+            
+          </li>
         </ul>
         <div className="tabgrid">
           <div className="tab-content">
@@ -849,7 +859,8 @@ function TabGroup({ data }) {
 <br />
 <div id="lastimg">
   <h2>Dare to Leap</h2>
-  <button>Learn More</button>
+  <a href="https://www.realme.com/in/brand" ><button>Learn More</button></a>
+  
 </div>
     </>
   );

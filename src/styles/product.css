@@ -96,7 +96,7 @@ background-color: whitesmoke;
     margin-top: 0;
     }.yellow,.buy{
         font-size: 10px;
-        width: 200px;
+        width: 100px;
         padding: 0;
     }.row1 div{
         margin-left: 20px;
@@ -105,5 +105,9 @@ background-color: whitesmoke;
         width: auto;   
     }.mar{
         width: 300px;
+    }.cartsession .gray{
+        width: 300px;
+        padding: 0 35px;
+        text-align: center;
     }
 }

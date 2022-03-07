@@ -68,7 +68,7 @@ if(!email.includes(".")){
         <div id= "logreg-forms">
           <form className="form-signin" onSubmit={handleSubmit}>
             <h1 className="h3 mb-3 font-weight-normal" style={{textAlign:"center"}}>
-              Sign In
+              Sign in
               </h1>
               {/* <div className="social-login">
                 <button 

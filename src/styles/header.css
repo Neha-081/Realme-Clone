@@ -4,12 +4,15 @@ div {
   }
   
   .header_container {
-    background-color: white;
-    transition: background-color 0.9s;
+   
+    top: 0;
     width: 100%;
+    background-color: white;
+    transition: background-color 0.9s;  
     position: absolute;
     z-index: 1;
     display: block;
+    
   }
   .header_container > .mall-plus {
     display: flex;
@@ -148,6 +151,7 @@ div {
     position: relative;
     letter-spacing: 0.1px;
     padding: 0 5px;
+    border-radius: 0;
   }
   .navigation_bar {
     position: absolute;

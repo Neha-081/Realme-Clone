@@ -1,5 +1,8 @@
 import React , { useState } from "react";
 import "../styles/payment.css";
+import { Link} from "react-router-dom";
+import { Header } from "../Components/NavAndFooter/Header";
+import { Footer } from "../Components/NavAndFooter/Footer";
 
 const PaymentPage = () => {
 
@@ -15,6 +18,9 @@ const PaymentPage = () => {
     const cardNumberHandleChange = (e) => {
       setCardNumber(e.target.value);
     };
+    const handleSuccess=()=>{
+      alert("Payment Successful")
+    }
   
     const handlePayment = () => {
       if (passWord.length !== 3) {
@@ -33,7 +39,14 @@ const PaymentPage = () => {
 
 
   return  (
+    <div>
+      <nav>
+        <Header/>
+      </nav>
+    <div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqFQ-3RAWOJvYpQ09tnVJN5R7nxO857-ehrT5ROtcNDaGGLuEPuZ1YeYyUuulZEROtoTk&usqp=CAU" alt="" className="imgpay"/>
    <div className="payment-container-main">
+     
         <div className="payment-container">
       <h1>Make Your Payment Now</h1>
       <div className="first-row">
@@ -115,10 +128,16 @@ const PaymentPage = () => {
         </div>
         <p id="exp"></p>
       </div>
-      <a href='###' id="payment" onClick={handlePayment}>
-        Pay Now
+      <a href='###' className="paybtn" id="payment" onClick={handlePayment}>
+        <Link to="/"  onClick={handleSuccess}>Pay Now</Link>
+        
       </a>
     </div>
+   </div>
+   </div>
+   <footer>
+     <Footer/>
+   </footer>
    </div>
   );
 }

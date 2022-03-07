@@ -85,6 +85,7 @@ export const Header = () => {
 
 
   return (
+    <div className="navbar-main">
     <div className="header_container">
       <div className="mall-plus">
         <div className="header-plus">
@@ -973,6 +974,7 @@ export const Header = () => {
           </a>
         </div>
       </div>
+    </div>
     </div>
   );
 };

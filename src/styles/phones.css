@@ -1,0 +1,118 @@
+.card{
+    font-family: OpenSans-Semibold,"PingFang SC","Microsoft YaHei",sans-serif,Arial;
+    width: 255px;
+    height: auto;
+    background: #fff;
+    cursor: pointer;
+    transition: transform 1s;
+    padding: 20px;
+
+}.card{
+    display: flex;
+    justify-content: space-between;
+}
+.card:hover{
+    -webkit-transform: rotateX(20deg);
+        transform: rotateX(20deg);
+        box-shadow: 2px 2px 2px lightgray;
+}
+.card-title{
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #000;
+}
+.card-text{
+    font-size: 14px;
+    line-height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #000;
+    text-overflow: ellipsis;
+}
+.price{
+    font-size: 17px;
+    line-height: 24px;
+    color: #d0021b;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 11px;
+}
+.button {
+    margin: 0 5px;
+    padding: 0 5px;
+    background: #fff3e9;
+    border-radius: 4px;
+    border: 1px solid #ff882c;
+    color: #000;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 16px;
+    color: #ff882c;
+}
+.box{
+    
+    background-color: whitesmoke;
+    width: 1000px;
+    margin: auto;
+    margin-top: 150px;
+    
+}.color{
+    display: flex;
+    justify-content: center;
+}
+
+.color >div{
+    
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    position: relative;
+    margin: 8px;
+    margin-bottom: 10px;
+   
+}
+.color >div:nth-child(1){
+    background-color: #000;
+}
+.color >div:nth-child(2){
+    background-color: #30bfff
+}
+.color >div:nth-child(3){
+   background-color:rgb(79, 180, 177) 
+}
+.phoneimg{
+    height: 150px;
+    width: 150px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ 
+}
+
+
+@media  screen and (max-width: 670px) {
+    .card{
+        width: 180px;
+        font-size: 10px;
+        padding: 10px;
+        
+    }.box{
+        width: 400px;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+     
+    }.phoneimg{
+        height: 80px;
+        width: 80px;
+    }.card-text,.card-title{
+        font-size: 10px;
+    }
+}
