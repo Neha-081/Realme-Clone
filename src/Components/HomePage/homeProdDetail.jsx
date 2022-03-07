@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { Footer } from "../NavAndFooter/Footer";
 import { Header } from "../NavAndFooter/Header";
 import "../../styles/product.css";
-import  Cartbtn  from "../../Pages/Cartbtn";
+import  Cartbutton  from "../../Pages/Cartbutton";
 
 function HomeProdDetail() {
   const { data } = useSelector((store) => store.data.homeData);
@@ -93,7 +93,7 @@ function HomeProdDetail() {
         <br />
       </div>
       <Footer />
-      <Cartbtn cartData={cartData}/>
+      <Cartbutton cartData={cartData}/>
     </>
   );
 }

@@ -7,7 +7,7 @@ import Category from '../Pages/Category';
 import ErrorPage from '../Pages/ErrorPage';
 import ProtectedRoutes from './ProtectedRoutes';
 import HomeProdDetail from '../Components/HomePage/homeProdDetail';
-import  Cartbtn  from '../Pages/Cartbtn';
+import  Cartbutton  from '../Pages/Cartbutton';
 import Login from '../Pages/Login';
 import Register from '../Pages/Register';
 import PaymentPage from '../Pages/PaymentPage';
@@ -29,7 +29,7 @@ const RoutesContainer = () => {
             <Route path="/category" element={<ProtectedRoutes auth={isLoggedIn}> <Category/> </ProtectedRoutes> } />
             <Route path='/category/:homeid' element={<HomeProdDetail/>}  />
             <Route path='/phoneproducts/:phoneid' element={<PhoneDetail/>}  />
-            <Route path='/cart' element={<Cartbtn />}  />
+            <Route path='/cart' element={<Cartbutton />}  />
             <Route path='/payment' element={<PaymentPage />}  />
             <Route path="/phoneproducts" element={<Product />}/>
             <Route path="*" element={ <ErrorPage/> } /> 
