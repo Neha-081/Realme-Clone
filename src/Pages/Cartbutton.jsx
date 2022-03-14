@@ -14,7 +14,6 @@ import { Link } from 'react-router-dom';
 
 
   const CartItem =(item,{cartData})=>{
-    console.log("cartData",cartData);
 
     
 

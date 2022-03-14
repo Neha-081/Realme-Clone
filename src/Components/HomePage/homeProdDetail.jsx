@@ -1,19 +1,56 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Footer } from "../NavAndFooter/Footer";
 import { Header } from "../NavAndFooter/Header";
+import { useDispatch } from "react-redux";
+import { addCartData } from "../../redux/cartReducer/actions";
 import "../../styles/product.css";
 import  Cartbutton  from "../../Pages/Cartbutton";
+import axios from "axios";
 
 function HomeProdDetail() {
   const { data } = useSelector((store) => store.data.homeData);
-  // const dispatch = useDispatch();
+  const {  cart } = useSelector((store) => ({...store}));
+  const dispatch=useDispatch()
+  // console.log("data",data);
+  // console.log("cart",cart);
+  
+//   const cartClick=()=>{
+//     console.log(homeid.homeid);
+//       dispatch(cartDataSuccess(cart))
+//     }
+
+//   useEffect(()=>{
+// cartClick()
+//   },[dispatch])
+
+const cartClick=()=>{
+  console.log("c----->",cart)
+   let arr1 = [...cart,homeid];
+   console.log("arr--->",arr1)
+   dispatch(addCartData(arr1))
+
+  // axios.post('https://neha-json-server.herokuapp.com/posts',homeid)
+  // .then(res=>console.log(res))
+  // .catch(err=>console.log(err))
+}
+
+// useEffect(()=>{
+ 
+//   const getCartData=()=>{
+//     axios.get('https://neha-json-server.herokuapp.com/posts').then(({data})=>{
+//         dispatch(cartDataSuccess(data))
+
+//     })
+// }
+//   getCartData()
+// },[dispatch])
+  
 
 
   // const [cartBtn, setcartBtn] = useState("Add to Cart");
-  const [cartData,setCartData]=useState([])
 
   const homeid = useParams();
   // console.log("homeid", homeid.homeid);
@@ -21,21 +58,7 @@ function HomeProdDetail() {
     (item) => Number(item.id) === Number(homeid.homeid)
   );
   const arr = prodDetail[0];
-  // console.log("arr", arr);
-  // const handleCart = (arr) => {
-  //   if (cartBtn === "Add to Cart") {
-  //     dispatch(addItem(arr));
-  //     setcartBtn("Remove from Cart");
-  //   } else {
-  //     dispatch(deleteItem(arr));
-  //     setcartBtn("Add to Cart");
-  //   }
-  // };
-  // const handleCart=()=>{
-  //   setCartData(homeid.homeid)
-   
-  // }
-  console.log("cartData",cartData);
+
 
  
 
@@ -75,7 +98,7 @@ function HomeProdDetail() {
                     </div>
                   </div>
                   <div className="cartsession">
-                    <button className="gray" onClick={() => setCartData(...cartData,homeid.homeid)} >
+                    <button className="gray" onClick={cartClick} >
                       Add to cart
                     </button>
                     <Link to="/payment">
@@ -93,7 +116,7 @@ function HomeProdDetail() {
         <br />
       </div>
       <Footer />
-      <Cartbutton cartData={cartData}/>
+      
     </>
   );
 }

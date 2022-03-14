@@ -5,7 +5,7 @@ import { Header } from "../Components/NavAndFooter/Header";
 import { Footer } from "../Components/NavAndFooter/Footer";
 import "../styles/phones.css";
 const Product = () => {
-  console.log(Data);
+  // console.log(Data);
 
   const CardItem = (item) => {
     

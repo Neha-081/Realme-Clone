@@ -1,5 +1,4 @@
-import React from "react";
-
+import React,{useState,useEffect} from "react";
 import { Link, useParams } from "react-router-dom";
 import { Header } from "../Components/NavAndFooter/Header";
 import { Footer } from "../Components/NavAndFooter/Footer";
@@ -8,18 +7,41 @@ import data from '../phones.json'
 
 function PhoneDetail() {
 
-
+const [cartData,setCartData]=useState([])
 
 
 
   const phoneid = useParams();
+  // console.log(phoneid);
   // console.log("homeid", homeid.homeid);
   const prodDetail = data.filter(
     (item) => Number(item.id) === Number(phoneid.phoneid)
   );
+  const cartClick=()=>{
+    // const idArray = [...phoneid]
+    if(typeof window!='undefined'){
+      console.log('hello1')
+      const getIds = JSON.parse(localStorage.getItem("cartData"))
+      let arr = [...getIds,phoneid.phoneid]
+      localStorage.setItem('cartData',JSON.stringify(arr))
+
+      console.log(getIds)
+    }else{
+      console.log('2')
+      const idArray = [phoneid]
+
+      console.log(idArray)
+      localStorage.setItem('cartData',JSON.stringify(idArray))
+    }
+    // setCartData(prev=>[...prev,phoneid.phoneid])
+  }
+  console.log("cartData",cartData);
   const arr = prodDetail[0];
-//    setCartData(homeid.homeid)
+  //  setCartData(homeid.homeid)
    
+useEffect(()=>{
+  setCartData()
+},[])
 
 
  
@@ -60,7 +82,7 @@ function PhoneDetail() {
                     </div>
                   </div>
                   <div className="cartsession">
-                    <button className="gray"  >
+                    <button className="gray" onClick={cartClick} >
                       Add to cart
                     </button>
                     <Link to="/payment">
