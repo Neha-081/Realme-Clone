@@ -39,7 +39,7 @@ const PaymentPage = () => {
 
         
   
-      toast.success("Payment Successfull")
+      toast.success("Payment Successful")
       setTimeout(() => {
         navigate("/")
       }, 5000)
