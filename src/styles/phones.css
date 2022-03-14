@@ -1,3 +1,4 @@
+
 .card{
     font-family: OpenSans-Semibold,"PingFang SC","Microsoft YaHei",sans-serif,Arial;
     width: 255px;
@@ -92,6 +93,18 @@
     justify-content: space-between;
     flex-wrap: wrap;
  
+}.no-order{
+    height: 200px;
+    margin:20px auto;
+ font-size: 25px;
+ color: gray;
+ font-weight: bold;
+ background-color: white;
+}.recom{
+    height: 35px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
 }
 
 

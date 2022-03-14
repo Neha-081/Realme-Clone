@@ -153,9 +153,9 @@ export const Header = () => {
               <span>|</span>
             </li>
             <li>
-              <a href="##" className="tagHeader">
+              <Link to="/myorder" className="tagHeader">
                 My Order
-              </a>
+              </Link>
             </li>
             <li>
               <span>|</span>
