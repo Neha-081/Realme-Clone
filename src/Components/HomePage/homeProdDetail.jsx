@@ -14,7 +14,7 @@ import {  toast } from 'react-toastify';
 function HomeProdDetail() {
   const { data } = useSelector((store) => store.data.homeData);
   const { cart } = useSelector((store) => ({ ...store }));
-  console.log("cart", cart);
+  // console.log("cart", cart);
 
   const dispatch = useDispatch()
 

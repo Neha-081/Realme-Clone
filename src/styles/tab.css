@@ -12,4 +12,7 @@
     color: red;
     font-weight: bold;
     font-size: 24px;
+}.remove:hover{
+    font-size: 30px;
+    color: red;
 }

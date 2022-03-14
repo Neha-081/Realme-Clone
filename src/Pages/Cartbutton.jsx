@@ -34,7 +34,7 @@ const handleRemove=(id)=>{
       <br />
  
 
-
+    
       <table class="table">
       <h1>My Cart</h1>
   <thead>
@@ -45,17 +45,23 @@ const handleRemove=(id)=>{
     </tr> */}
   </thead>
   <tbody>
+
     {cart.map((e)=>(
      <tr>
-       <td><img style={{height:100,width:100}} src={e.image_url} alt="proimg"/></td>
+       <td>
+      
+         <img style={{height:100,width:100}} src={e.image_url} alt="proimg"/>
+         </td>
        <td>{e.name}</td>
        <td className="price" >{e.price}</td>
-       <td style={{cursor:"pointer"}} onClick={()=>handleRemove(e.id)}>X</td>
+       <td style={{cursor:"pointer"}} onClick={()=>handleRemove(e.id)} className="remove">X</td>
      </tr>
     ))}
+    
   
   </tbody>
 </table>
+
 
         <h2 className='lead fw-bold' >Total Amount : <span id="pricep">₹ {total}</span></h2>
         <Link to="/payment"  > <button  className='btn btn-primary float-end' id="buybtn">Buy Now </button></Link>

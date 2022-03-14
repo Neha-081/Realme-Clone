@@ -18,7 +18,7 @@ const Product = () => {
           <div className="card-body text-center">
             <h5 className="card-title">{item.name}</h5>
             <p className="card-text">{item.desc}</p>
-            <p className="price">₹ {item.price}</p>
+            <p className="price"> {item.price}</p>
             <div className='color'>
       <div></div>
       <div></div>
