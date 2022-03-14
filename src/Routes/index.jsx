@@ -21,7 +21,7 @@ const RoutesContainer = () => {
   const { currentUser } = useSelector((state) => state.user);
   const isLoggedIn = currentUser;
 
-  console.log(currentUser,'currentUser -----> ')
+  console.log(currentUser,'currentUser ----> ')
 
   return (
     <div>      
