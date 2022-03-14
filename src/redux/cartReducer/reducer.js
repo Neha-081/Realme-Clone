@@ -1,17 +1,24 @@
-import { ADD_CART_DATA} from "./actionTypes";
+import { ADD_CART_DATA } from "./actionTypes";
 
 
-const init = []
+let init = []
+if (typeof window != undefined) {
+    if (localStorage.getItem('cartData')) {
+        init = JSON.parse(localStorage.getItem("cartData"))
+    }
+} else {
+    init = [];
+}
 
 const cartReducer = (store = init, { type, payload }) => {
     switch (type) {
-      case ADD_CART_DATA:
-        return payload
-          
-      
-      default:
-        return store;
-    }
-  };
+        case ADD_CART_DATA:
+            return payload
 
-  export default cartReducer;
+
+        default:
+            return store;
+    }
+};
+
+export default cartReducer;

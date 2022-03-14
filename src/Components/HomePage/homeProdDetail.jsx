@@ -1,56 +1,47 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Footer } from "../NavAndFooter/Footer";
 import { Header } from "../NavAndFooter/Header";
 import { useDispatch } from "react-redux";
 import { addCartData } from "../../redux/cartReducer/actions";
+import _ from "lodash"
 import "../../styles/product.css";
-import  Cartbutton  from "../../Pages/Cartbutton";
-import axios from "axios";
+
 
 function HomeProdDetail() {
   const { data } = useSelector((store) => store.data.homeData);
-  const {  cart } = useSelector((store) => ({...store}));
-  const dispatch=useDispatch()
-  // console.log("data",data);
-  // console.log("cart",cart);
-  
-//   const cartClick=()=>{
-//     console.log(homeid.homeid);
-//       dispatch(cartDataSuccess(cart))
-//     }
+  const { cart } = useSelector((store) => ({ ...store }));
+  console.log("cart", cart);
 
-//   useEffect(()=>{
-// cartClick()
-//   },[dispatch])
-
-const cartClick=()=>{
-  console.log("c----->",cart)
-   let arr1 = [...cart,homeid];
-   console.log("arr--->",arr1)
-   dispatch(addCartData(arr1))
-
-  // axios.post('https://neha-json-server.herokuapp.com/posts',homeid)
-  // .then(res=>console.log(res))
-  // .catch(err=>console.log(err))
-}
-
-// useEffect(()=>{
- 
-//   const getCartData=()=>{
-//     axios.get('https://neha-json-server.herokuapp.com/posts').then(({data})=>{
-//         dispatch(cartDataSuccess(data))
-
-//     })
-// }
-//   getCartData()
-// },[dispatch])
-  
+  const dispatch = useDispatch()
 
 
-  // const [cartBtn, setcartBtn] = useState("Add to Cart");
+  const cartClick = () => {
+    if (typeof window != undefined) {
+      // if(cartData.length){
+
+      // }
+      let uniqueData = data.filter((el) => Number(el.id) === Number(homeid.homeid))
+      // console.log("uniquedata", uniqueData);
+      // console.log("cart", cart);
+      if (cart.length === 0) {
+        localStorage.setItem("cartData", JSON.stringify(uniqueData))
+        dispatch(addCartData(uniqueData))
+      } else {
+        let arr1 = [...cart, ...uniqueData];
+        let unique = _.uniqWith(arr1, _.isEqual)
+        localStorage.setItem("cartData", JSON.stringify(unique))
+        dispatch(addCartData(unique))
+      }
+
+      // console.log("unique",uniqueData);
+      // dispatch(addCartData(unique))
+    }
+  }
+
+
+
 
   const homeid = useParams();
   // console.log("homeid", homeid.homeid);
@@ -60,13 +51,13 @@ const cartClick=()=>{
   const arr = prodDetail[0];
 
 
- 
+
 
 
   return (
     <>
       <div>
-        <Header/>
+        <Header />
         <br />
 
         <div key={arr.id} className="allDetail">
@@ -102,11 +93,11 @@ const cartClick=()=>{
                       Add to cart
                     </button>
                     <Link to="/payment">
-                    <button className="yellow">
-                      Buy Now
-                      
-                     </button>
-                     </Link>
+                      <button className="yellow">
+                        Buy Now
+
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -116,7 +107,7 @@ const cartClick=()=>{
         <br />
       </div>
       <Footer />
-      
+
     </>
   );
 }

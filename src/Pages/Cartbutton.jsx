@@ -4,39 +4,28 @@ import { Footer } from '../Components/NavAndFooter/Footer';
 import { Header } from '../Components/NavAndFooter/Header';
 import "../styles/tab.css"
 import { Link } from 'react-router-dom';
-// import { useSelector } from 'react-redux';
-// import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import {addCartData} from '../redux/cartReducer/actions'
 
  const Cartbutton = () => {
-  // const { data } = useSelector((store) => store.data.homeData);
-  // const dispatch = useDispatch();
-  // console.log(data);
+  const {  cart } = useSelector((store) => ({...store}));
+  const dispatch=useDispatch();
+  // console.log("cart",cart);
+ let total= cart.reduce((curr,el)=>{
+    return curr+Number(el.price.replace(/,/g,'').split('₹')[1]);
+  },0)
+// console.log(total);
 
+total=(total.toLocaleString())   //apply comma in digit place
 
-  const CartItem =(item,{cartData})=>{
+const handleRemove=(id)=>{
+  let filArr=cart.filter(item=>item.id!==id)
+  localStorage.setItem("cartData",JSON.stringify(filArr))
+  dispatch(addCartData(filArr))
+  console.log(filArr);
+}
 
-    
-
-    return (
-      <div className='px-3 my-5 bg-light rounded-3 hi'>
-      <div className='container py-5 bye'>
-      
-          <div className='row justify-content-center'>
-  
-            <div className='col-md-4'>
-              <img src={item.image_url} height="100px" width="90px" alt=""/>
-            </div>
-  
-            <div className='col-md-4'>
-            <h3>{item.name}</h3>
-              <p className='lead fw-bold'>${item.price}</p>
-            </div>
-        </div>
-      </div>
-    </div>
-    )
-
-  }
   
   return (
     <div>
@@ -44,15 +33,50 @@ import { Link } from 'react-router-dom';
         <Header/>
       </nav>
       <br />
-      <div className='container containercart'>
+ 
+
+
+      <table class="table">
+      <h1>My Cart</h1>
+  <thead>
+    {/* <tr>
+      <th scope="col"></th>
+      <th scope="col" ></th>
+      <th scope="col" ></th>
+    </tr> */}
+  </thead>
+  <tbody>
+    {cart.map((e)=>(
+     <tr>
+       <td><img style={{height:100,width:100}} src={e.image_url}/></td>
+       <td>{e.name}</td>
+       <td>{e.price}</td>
+       <td style={{cursor:"pointer"}} onClick={()=>handleRemove(e.id)}>X</td>
+     </tr>
+    ))}
+  
+  </tbody>
+</table>
+
+        <h2 className='lead fw-bold'>Total Amount : $ {total}</h2>
+        <Link to="/payment"  > <button  className='btn btn-primary float-end' id="buybtn">Buy Now </button></Link>
+
+      {/* <div className='container containercart'>
         <div className='row  justify-content-around' >
        
-          {cart.map(CartItem)}
+          {cart.map((e)=>(
+            <>
+                <div className='col-md-4'>
+              <img src={e.image_url} height="100px" width="90px" alt=""/>
+              <p>{e.price}</p>
+            </div>
+            </>
+          ))}
           
         </div>
         <h2 className='lead fw-bold'>Total Amount : $21498</h2>
         <Link to="/payment"  > <button  className='btn btn-primary float-end' >Buy Now </button></Link>
-    </div>
+    </div> */}
     <footer>
       <Footer/>
     </footer>
