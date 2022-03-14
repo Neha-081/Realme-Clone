@@ -11,7 +11,9 @@ import  Cartbutton  from '../Pages/Cartbutton';
 import Login from '../Pages/Login';
 import Register from '../Pages/Register';
 import PaymentPage from '../Pages/PaymentPage';
-import PhoneDetail from '../Pages/PhoneDetail'
+import PhoneDetail from '../Pages/PhoneDetail';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const RoutesContainer = () => {
 
@@ -22,6 +24,7 @@ const RoutesContainer = () => {
 
   return (
     <div>      
+        <ToastContainer />
         <Routes>
             <Route exact path="/" element={ <HomePage /> } />
             <Route path="/login" element={<Login />}/> 

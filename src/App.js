@@ -15,7 +15,6 @@ useEffect(() => {
 }, [location]);
   return (
     <div className="App">
-
      <nav>
      <Link to="/"></Link>
      </nav>

@@ -7,6 +7,8 @@ import { useDispatch } from "react-redux";
 import { addCartData } from "../../redux/cartReducer/actions";
 import _ from "lodash"
 import "../../styles/product.css";
+import {  toast } from 'react-toastify';
+
 
 
 function HomeProdDetail() {
@@ -19,9 +21,6 @@ function HomeProdDetail() {
 
   const cartClick = () => {
     if (typeof window != undefined) {
-      // if(cartData.length){
-
-      // }
       let uniqueData = data.filter((el) => Number(el.id) === Number(homeid.homeid))
       // console.log("uniquedata", uniqueData);
       // console.log("cart", cart);
@@ -34,10 +33,10 @@ function HomeProdDetail() {
         localStorage.setItem("cartData", JSON.stringify(unique))
         dispatch(addCartData(unique))
       }
-
       // console.log("unique",uniqueData);
       // dispatch(addCartData(unique))
     }
+    toast.success("Item Added to Cart")
   }
 
 

@@ -1,13 +1,15 @@
 import React , { useState } from "react";
 import "../styles/payment.css";
-import { Link} from "react-router-dom";
 import { Header } from "../Components/NavAndFooter/Header";
 import { Footer } from "../Components/NavAndFooter/Footer";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const PaymentPage = () => {
 
     const [passWord, setPassWord] = useState([]);
     const [passDes, setPassDes] = useState();
+    let navigate = useNavigate();
   
     const [cardNumber, setCardNumber] = useState([]);
     const [cardNumberValid, setCardNumberValid] = useState();
@@ -18,9 +20,7 @@ const PaymentPage = () => {
     const cardNumberHandleChange = (e) => {
       setCardNumber(e.target.value);
     };
-    const handleSuccess=()=>{
-      alert("Payment Successful")
-    }
+
   
     const handlePayment = () => {
       if (passWord.length !== 3) {
@@ -35,6 +35,15 @@ const PaymentPage = () => {
       if (cardNumber.length === 16) {
         setCardNumberValid("");
       }
+      if(passWord.length===3 && cardNumber.length===16){
+
+        
+  
+      toast.success("Payment Successfull")
+      setTimeout(() => {
+        navigate("/")
+      }, 5000)
+    }
     };
 
 
@@ -129,7 +138,8 @@ const PaymentPage = () => {
         <p id="exp"></p>
       </div>
       <a href='###' className="paybtn" id="payment" onClick={handlePayment}>
-        <Link to="/"  onClick={handleSuccess}>Pay Now</Link>
+  
+      Pay Now
         
       </a>
     </div>
