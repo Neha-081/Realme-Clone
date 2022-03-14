@@ -137,7 +137,7 @@ const PaymentPage = () => {
         </div>
         <p id="exp"></p>
       </div>
-      <a href='###' className="paybtn" id="payment" onClick={handlePayment}>
+      <a href='###' className="paybtn" id="payment" style={{textDecoration:"none"}} onClick={handlePayment}>
   
       Pay Now
         
