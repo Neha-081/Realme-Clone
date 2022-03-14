@@ -63,7 +63,7 @@ useEffect(()=>{
                 <h1 className="brand display-6 fw-bold">
                   {arr.name} (Prism Blue,6GB+128GB)
                 </h1>
-                <h2 className="my-1 cartprice"> {arr.price}</h2>
+                <h2 className="my-1 cartprice">₹ {arr.price}</h2>
                 <hr />
                 <div className="mar">
                   <div className="button">{arr.coupon1}</div>
@@ -78,7 +78,7 @@ useEffect(()=>{
                     </div>
                     <div></div>
                     <div>
-                      <h2>{arr.price}</h2>
+                      <h2>₹  {arr.price}</h2>
                     </div>
                   </div>
                   <div className="cartsession">

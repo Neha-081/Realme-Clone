@@ -1,5 +1,4 @@
 import React from 'react';
-import cart from "../cart.json";
 import { Footer } from '../Components/NavAndFooter/Footer';
 import { Header } from '../Components/NavAndFooter/Header';
 import "../styles/tab.css"
@@ -48,9 +47,9 @@ const handleRemove=(id)=>{
   <tbody>
     {cart.map((e)=>(
      <tr>
-       <td><img style={{height:100,width:100}} src={e.image_url}/></td>
+       <td><img style={{height:100,width:100}} src={e.image_url} alt="proimg"/></td>
        <td>{e.name}</td>
-       <td>{e.price}</td>
+       <td className="price" >{e.price}</td>
        <td style={{cursor:"pointer"}} onClick={()=>handleRemove(e.id)}>X</td>
      </tr>
     ))}
@@ -58,7 +57,7 @@ const handleRemove=(id)=>{
   </tbody>
 </table>
 
-        <h2 className='lead fw-bold'>Total Amount : $ {total}</h2>
+        <h2 className='lead fw-bold' >Total Amount : <span id="pricep">₹ {total}</span></h2>
         <Link to="/payment"  > <button  className='btn btn-primary float-end' id="buybtn">Buy Now </button></Link>
 
       {/* <div className='container containercart'>

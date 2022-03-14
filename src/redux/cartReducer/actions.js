@@ -1,4 +1,4 @@
-import { ADD_CART_DATA ,CART_DATA_SUCCESS} from "./actionTypes";
+import { ADD_CART_DATA} from "./actionTypes";
 
 export const addCartData =(payload)=>{
     return {
