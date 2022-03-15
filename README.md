@@ -101,6 +101,15 @@
 ![payment](https://user-images.githubusercontent.com/92449229/155889151-8a254e25-574d-46b5-8170-c55407d17bda.jpeg)
 
 
+7. **Phone Page**
+
+![Screen Shot 2022-03-15 at 12 02 33 AM](https://user-images.githubusercontent.com/87421798/158238308-8862c279-5786-4da7-8f88-8dc8af2b2a0a.png)
+
+
+8. **Cart Page**
+
+
+![Screen Shot 2022-03-14 at 11 58 26 PM](https://user-images.githubusercontent.com/87421798/158237883-7db476da-b986-4363-ba62-7ae1d89a9f4c.png)
 
 
 
