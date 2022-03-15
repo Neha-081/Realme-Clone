@@ -8,6 +8,8 @@ body{
   margin-top: 100px;
 }
 
+
+
 @media  screen and (max-width: 600px) {
   .container{
     width: 150%;
@@ -15,3 +17,8 @@ body{
     margin-top: 35px;
   }
 }
+@media  screen and (max-width: 400px) {
+  .container{
+    width: 100%;
+  }
+  }

@@ -94,6 +94,7 @@ export const Header = () => {
     <div className="header_container">
       <div className="mall-plus">
         <div className="header-plus">
+          <div className="notResDiv">
           <ul>
             <li>
               <a href="https://www.realme.com/in/realmeow" className="tagHeader">
@@ -149,6 +150,12 @@ export const Header = () => {
               </a>
             </li>
           </ul>
+          </div>
+
+
+
+
+          <div className="resposniveDiv">
           <ul>
             <li>
               { currentUser ? <button className="logoutButton" onClick={handleAuth}>Logout</button> :  <Link className="tagHeader" to="/login">Login</Link> }
@@ -170,6 +177,7 @@ export const Header = () => {
                 
             </li>
           </ul>
+          </div>
         </div>
       </div>
 

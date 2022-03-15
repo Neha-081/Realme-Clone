@@ -322,3 +322,15 @@
   }.footer-menu a:hover{
     color: #ffc915;
   }
+
+
+
+  @media  screen and (max-width: 400px) {
+    .notResDiv,.footer-services,.footer-contact{
+      display: none;
+    }.footer-legal a:last-child{
+      display: none;
+    }.footer{
+      padding-left: 14px;
+    }
+  }
