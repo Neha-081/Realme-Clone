@@ -2,14 +2,18 @@ import React from 'react';
 import { Footer } from '../Components/NavAndFooter/Footer';
 import { Header } from '../Components/NavAndFooter/Header';
 import "../styles/tab.css"
-import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import {addCartData} from '../redux/cartReducer/actions'
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
  const Cartbutton = () => {
   const {  cart } = useSelector((store) => ({...store}));
+  const { currentUser } = useSelector((state) => state?.user);
+
   const dispatch=useDispatch();
+  const navigate=useNavigate()
   // console.log("cart",cart);
  let total= cart.reduce((curr,el)=>{
     return curr+Number(el.price.replace(/,/g,'').split('₹')[1]);
@@ -25,7 +29,15 @@ const handleRemove=(id)=>{
   console.log(filArr);
 }
 
-  
+const buyCheck=()=>{
+  if(currentUser){
+   navigate("/payment")
+  }else{
+    toast.warning("User have to Login first")
+    navigate("/login")
+  }
+}  
+
   return (
     <div>
       <nav>
@@ -64,7 +76,10 @@ const handleRemove=(id)=>{
 
 
         <h2 className='lead fw-bold' >Total Amount : <span id="pricep">₹ {total}</span></h2>
-        <Link to="/payment"  > <button  className='btn btn-primary float-end' id="buybtn">Buy Now </button></Link>
+        {/* <Link to="/payment"  >  */}
+        <button  className='btn btn-primary float-end' id="buybtn" onClick={buyCheck}>
+          Buy Now </button>
+          {/* </Link> */}
 
       {/* <div className='container containercart'>
         <div className='row  justify-content-around' >

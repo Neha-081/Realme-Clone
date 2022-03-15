@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import { useNavigate, Link} from 'react-router-dom';
 import { registerInitiate } from '../redux/userReducer/actions';
 import "./Register.css";
+import { toast } from 'react-toastify';
 
 const Register=()=>{
 
@@ -31,11 +32,11 @@ useEffect(()=>{
   const handleSubmit =(e) =>{
     e.preventDefault();
     if(password !== passwordConfirm){
-      return alert("Passwords don't match");
+      return toast.warning("Passwords don't match");
     }
     dispatch (registerInitiate(email, password, displayName));
     setState({email:"", displayName: "", password: "", passwordConfirm: ""})
-    alert ("You have successfully registered");
+    toast.success("You have successfully registered");
     };
   const handleChange =(e) =>{
     let {name, value} = e.target;
@@ -119,7 +120,7 @@ useEffect(()=>{
               <button className="block" type="submit">
                 Create account
               </button>
-            <Link to="/login">
+            <Link to="/login" style={{textDecoration:"none"}}>
              <i className="fas fa-angle-left"></i> Back
               </Link>
           </form>

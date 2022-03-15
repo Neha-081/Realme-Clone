@@ -73,6 +73,8 @@
   #logreg-forms .google-btn {
     background-color:rgb(214, 205, 205);
     margin-right: 5px;
+    font-size: 12px;
+    font-weight: bold;
   }
   
   #logreg-forms .form-signup .social-btn {
@@ -95,6 +97,13 @@
     margin-top:70px;
 border-radius:10px;
 color:grey;
+  }.block-signin:hover{
+   background-color: rgb(94, 179, 54);
+   transition: 0.6s;
+   color: white;
+  }#logreg-forms .google-btn:hover{
+    background-color: rgb(228, 101, 101);
+    transition: 0.6s;
   }
   .block-newsignup{
     color:grey;
@@ -103,6 +112,10 @@ color:grey;
     border:none;
     outline:none;
 border-radius:10px;
+  }.block-newsignup:hover{
+    background-color: rgb(150, 146, 146);
+    transition: 0.6s;
+    color: white;
   }
   .signwithpass{
     font-size: 16px;

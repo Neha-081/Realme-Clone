@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import { useNavigate, Link} from 'react-router-dom';
 import { googleSignInInitiate, loginInitiate } from '../redux/userReducer/actions';
 import "./Login.css";
+import { toast } from 'react-toastify';
 
 const Login=()=>{
   const [state, setState] = useState({
@@ -18,11 +19,13 @@ const navigate = useNavigate();
 
 useEffect(()=>{
   if(currentUser){
+    toast.success("You have successfully logged In")
     navigate('/');
   }
 },[currentUser, navigate]);
 
 const dispatch = useDispatch();
+
 
 const handleGoogleSignIn = () => {
   dispatch(googleSignInInitiate());
@@ -35,17 +38,18 @@ const handleGoogleSignIn = () => {
       return alert("Please fill in all fields");
     }
 if(password.length < 6){
-  return alert("Password must be at least 6 characters");
+  return toast.error("Password must be of 6 characters")
 }
 if(email.length < 6){
-  return alert("Email must be at least 6 characters");
+  return toast.error("Email must be at least 6 characters");
 }
 if(!email.includes("@")){
-  return alert("Please enter a valid email");
+  return toast.error("Please enter a valid email");
 }
 if(!email.includes(".")){
-  return alert("Please enter a valid email");
+  return toast.error("Please enter a valid email");
 }
+
  //if(!e.email){
  //return alert("Please enter a valid email");
     
@@ -55,7 +59,8 @@ if(!email.includes(".")){
 
    dispatch(loginInitiate(email, password));
     setState({email:"", password:""});
-    alert ("You have successfully logged in");
+
+    
   };
 
   const handleChange =(e) =>{

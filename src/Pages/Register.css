@@ -103,6 +103,10 @@
     margin-top:70px;
 border-radius:10px;
 color:grey;
+  }.block:hover{
+    background-color: grey;
+    color: white;
+    transition: 0.5s;
   }
   .Pass-data{
     color:grey;

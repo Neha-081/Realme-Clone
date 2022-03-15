@@ -6,17 +6,29 @@ import "../../src/styles/product.css";
 import "../../src/styles/phones.css";
 import data from '../phones.json'
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { addCartData } from "../redux/cartReducer/actions";
+
 import _ from "lodash";
 import { toast } from "react-toastify";
 
 function PhoneDetail() {
 
   const { cart } = useSelector((store) => ({ ...store }));
+  const { currentUser } = useSelector((state) => state?.user);
+
   const dispatch = useDispatch()
+  const navigate=useNavigate();
 
-
+const buyCheck=()=>{
+  if(currentUser){
+    navigate("/payment")
+  }else{
+    toast.warning("User have to Login First")
+    navigate("/login")
+  }
+}
   const phoneid = useParams();
   // console.log(phoneid);
 
@@ -122,12 +134,12 @@ function PhoneDetail() {
                     <button className="gray"  onClick={cartClick}>
                       Add to cart
                     </button>
-                    <Link to="/payment">
-                    <button className="yellow">
+                    {/* <Link to="/payment"> */}
+                    <button className="yellow" onClick={buyCheck}>
                       Buy Now
                       
                      </button>
-                     </Link>
+                     {/* </Link> */}
                   </div>
                 </div>
               </div>

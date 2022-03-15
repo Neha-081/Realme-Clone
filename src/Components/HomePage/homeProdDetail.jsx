@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { Footer } from "../NavAndFooter/Footer";
 import { Header } from "../NavAndFooter/Header";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { addCartData } from "../../redux/cartReducer/actions";
 import Data from "../../phones.json"
 import _ from "lodash"
@@ -17,9 +18,12 @@ import {  toast } from 'react-toastify';
 function HomeProdDetail() {
   const { data } = useSelector((store) => store.data.homeData);
   const { cart } = useSelector((store) => ({ ...store }));
+  const { currentUser } = useSelector((state) => state?.user);
+
   // console.log("cart", cart);
 
   const dispatch = useDispatch()
+  const navigate=useNavigate()
 
 
   const cartClick = () => {
@@ -43,7 +47,14 @@ function HomeProdDetail() {
   }
 
 
-
+const buyCheck=()=>{
+  if(currentUser){
+    navigate("/payment")
+  }else {
+    toast.warning("User have to Login First")
+    navigate("/login")
+  }
+}
 
   const homeid = useParams();
   // console.log("homeid", homeid.homeid);
@@ -126,12 +137,12 @@ function HomeProdDetail() {
                     <button className="gray" onClick={cartClick} >
                       Add to cart
                     </button>
-                    <Link to="/payment">
-                      <button className="yellow">
+                    {/* <Link to="/payment"> */}
+                      <button className="yellow" onClick={buyCheck}>
                         Buy Now
 
                       </button>
-                    </Link>
+                    {/* </Link> */}
                   </div>
                 </div>
               </div>

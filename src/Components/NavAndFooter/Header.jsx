@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import {useDispatch, useSelector} from 'react-redux';
 import { logoutInitiate } from '../../redux/userReducer/actions';
-
+import { toast } from "react-toastify";
 import "../../styles/header.css";
 
 export const Header = () => {
@@ -76,9 +76,10 @@ export const Header = () => {
 
   
   const handleAuth = () => {
-    console.log(currentUser,'currentUser currentUser ----- ')
+    // console.log(currentUser,'currentUser currentUser ----- ')
     // if(currentUser){
-      console.log('enter -- ', currentUser)
+      // console.log('enter -- ', currentUser)
+      toast.success("You have successfully Logged out")
       dispatch(logoutInitiate());
     // }
     };
