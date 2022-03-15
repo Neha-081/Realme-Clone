@@ -35,7 +35,7 @@ const handleGoogleSignIn = () => {
   const handleSubmit =(e) =>{
     e.preventDefault();
     if(!email || !password){
-      return alert("Please fill in all fields");
+      return toast.warning("Please fill in all fields");
     }
 if(password.length < 6){
   return toast.error("Password must be of 6 characters")
@@ -58,6 +58,8 @@ if(!email.includes(".")){
 
 
    dispatch(loginInitiate(email, password));
+   toast.error("User must create account first")
+   navigate("/register")
     setState({email:"", password:""});
 
     

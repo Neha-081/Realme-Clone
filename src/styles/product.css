@@ -81,12 +81,16 @@ background-color: whitesmoke;
     width: auto;
     color: #ff882c;
 }.descript{
-   margin-left: -580px;
+   margin-left: -380px;
 }.allDetail{
     margin-top: 100px;
 }
 
-
+@media  screen and (max-width: 1130px) {
+    .descript{
+        margin-left: 100px;
+    }
+}
 @media  screen and (max-width: 670px) {
     .row1{
         flex-direction: column;
