@@ -7,6 +7,7 @@ export const addCartData =(payload)=>{
     }
 }
 
+
 // export const cartDataSuccess=(payload)=>{
 //     console.log(payload,'paylaod')
 //    return {type:CART_DATA_SUCCESS,

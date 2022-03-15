@@ -4,10 +4,14 @@ import Data from "../phones.json";
 import { Header } from "../Components/NavAndFooter/Header";
 import { Footer } from "../Components/NavAndFooter/Footer";
 import "../styles/phones.css";
+import { useSelector } from "react-redux";
 const MyOrder = () => {
+  const history=useSelector(store=>store.history)
+  console.log("hhisro",history);
   // console.log(Data);
 
   const CardItem = (item) => {
+ 
     
     return (
       <>

@@ -4,12 +4,15 @@ import { Header } from "../Components/NavAndFooter/Header";
 import { Footer } from "../Components/NavAndFooter/Footer";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-
+import { useDispatch } from "react-redux";
+import { addCartData } from "../redux/cartReducer/actions";
+import { historyCartData } from "../redux/orderHistoryReducer/actions";
 const PaymentPage = () => {
 
     const [passWord, setPassWord] = useState([]);
     const [passDes, setPassDes] = useState();
     let navigate = useNavigate();
+    let dispatch=useDispatch()
   
     const [cardNumber, setCardNumber] = useState([]);
     const [cardNumberValid, setCardNumberValid] = useState();
@@ -21,7 +24,7 @@ const PaymentPage = () => {
       setCardNumber(e.target.value);
     };
 
-  
+
     const handlePayment = () => {
       if (passWord.length !== 3) {
         setPassDes("*Invalid Credential");
@@ -36,13 +39,18 @@ const PaymentPage = () => {
         setCardNumberValid("");
       }
       if(passWord.length===3 && cardNumber.length===16){
-
-        
-  
+        if(typeof window !=undefined){
+          if(localStorage.getItem("cartData")){
+    let myOrderData=JSON.parse(localStorage.getItem("cartData"))
+    dispatch(historyCartData(myOrderData))
+            localStorage.setItem("cartData",JSON.stringify([]))
+          }
+        }
+        dispatch(addCartData([]))
       toast.success("Payment Successful")
       setTimeout(() => {
         navigate("/")
-      }, 5000)
+      }, 3000)
     }
     };
 
@@ -50,7 +58,7 @@ const PaymentPage = () => {
   return  (
     <div>
       <nav>
-        <Header/>
+        <Header />
       </nav>
     <div>
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqFQ-3RAWOJvYpQ09tnVJN5R7nxO857-ehrT5ROtcNDaGGLuEPuZ1YeYyUuulZEROtoTk&usqp=CAU" alt="" className="imgpay"/>

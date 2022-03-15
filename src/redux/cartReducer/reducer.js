@@ -15,7 +15,7 @@ const cartReducer = (store = init, { type, payload }) => {
         case ADD_CART_DATA:
             return payload
 
-
+        
         default:
             return store;
     }
