@@ -15,14 +15,19 @@ const Register=()=>{
    });
 
 const {currentUser} = useSelector((state) => state.user);
+const {registerFail} = useSelector((state) => state.user);
 
 const navigate = useNavigate();
 
 useEffect(()=>{
   if(currentUser){
+    toast.success("You have successfully registered");
     navigate('/');
+  }else if(registerFail===true){
+    toast.error("User already exist!!, Kindly Login");
+    navigate("/login")
   }
-},[currentUser, navigate]);
+},[currentUser, navigate,registerFail]);
 
 
    const dispatch = useDispatch();
@@ -34,9 +39,15 @@ useEffect(()=>{
     if(password !== passwordConfirm){
       return toast.warning("Passwords don't match");
     }
+    // if(currentUser===null){
+    //   toast.warning("Email already Exist, Kindly Login!")
+    //   navigate("/login")
+    // }else{
     dispatch (registerInitiate(email, password, displayName));
     setState({email:"", displayName: "", password: "", passwordConfirm: ""})
-    toast.success("You have successfully registered");
+   
+    
+    
     };
   const handleChange =(e) =>{
     let {name, value} = e.target;

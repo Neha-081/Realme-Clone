@@ -8,14 +8,13 @@ import { useSelector } from "react-redux";
 const MyOrder = () => {
   const history=useSelector(store=>store.history)
   console.log("hhisro",history);
-  // console.log(Data);
+  
 
   const CardItem = (item) => {
  
     
     return (
       <>
-
 
         <div className="card my-3" key={item.id} >
           <Link to={`/phoneproducts/${item.id}`} style={{textDecoration:"none"}}>
@@ -53,7 +52,33 @@ const MyOrder = () => {
       </div>
     <div className="no-order">
 
-    No Order
+
+    <table className="table">
+  <thead>
+    {/* <tr>
+      <th scope="col"></th>
+      <th scope="col" ></th>
+      <th scope="col" ></th>
+    </tr> */}
+  </thead>
+  <tbody>
+
+    {history.map((e)=>(
+     <tr>
+       <td>
+      
+         <img style={{height:100,width:100}} src={e.image_url} alt="proimg"/>
+         </td>
+       <td>{e.name}</td>
+       <td className="price" >{e.price}</td>
+     </tr>
+    ))}
+    
+  
+  </tbody>
+</table>
+
+    
   </div>
       <div className="containerPhone">
         <div className="recom">Recommended Items for you</div>

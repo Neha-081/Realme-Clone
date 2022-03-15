@@ -4,6 +4,8 @@ const initialState={
     loading: false,
     currentUser: null,
     error: null,
+    loginFail:false,
+    registerFail:false
 };
 
 const loggedUser = {
@@ -29,6 +31,8 @@ const userReducer = (state=initialState,action)=>{
                 return{
                     ...state,
                     currentUser: null,
+                    loginFail:false,
+                    registerFail:false
                 };
                 case types.SET_USER:
                     return{
@@ -57,9 +61,21 @@ const userReducer = (state=initialState,action)=>{
                     ...state,
                     loading:false,
                     currentUser:  isGoogleLogging ? loggedUser : action.payload,
+                    loginFail:false,
+                    registerFail:false
                 };
-                case types.REGISTER_FAIL:
+              
+                 
+
                 case types.LOGIN_FAIL:
+                    return {
+                        loginFail:true
+                     }
+
+                     case types.REGISTER_FAIL:
+                         return {
+                        registerFail:true
+                         }
                     case types.LOGOUT_FAIL:
                         case types.GOOGLE_SIGN_IN_FAIL:
                     return{

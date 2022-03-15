@@ -7,12 +7,11 @@
     margin: auto;
 }table{
     margin-top: 100px;
-    font-size: 20px;
+    font-size: 16px;
 }#pricep{
     color: red;
     font-weight: bold;
-    font-size: 24px;
-}.remove:hover{
-    font-size: 30px;
-    color: red;
+    font-size: 18px;
+}.remove{
+    color: rgb(180, 48, 48);
 }
