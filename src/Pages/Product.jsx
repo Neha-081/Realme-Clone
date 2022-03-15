@@ -5,7 +5,17 @@ import { Header } from "../Components/NavAndFooter/Header";
 import { Footer } from "../Components/NavAndFooter/Footer";
 import "../styles/phones.css";
 const Product = () => {
-  // console.log(Data);
+
+  // console.log("total",total);
+
+  // const sortByPrice=()=>{
+  //   Data.sort((a,b)=>{
+  //   var ar= a.price.replace(/,/g,'').split('₹')[1]-b.price.replace(/,/g,'').split('₹')[1]
+  //   console.log(ar);
+  //   }
+  //   )
+
+  // }
 
   const CardItem = (item) => {
     
@@ -41,6 +51,9 @@ const Product = () => {
     <Header/>
   </nav>
     <div className="box">
+      {/* <div>
+        <button>Sort by Price</button>
+      </div> */}
       <div className="containerPhone">
         <div className="row  justify-content-around">{Data.map(CardItem)}</div>
       </div>
