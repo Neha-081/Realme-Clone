@@ -6,16 +6,7 @@ import { Footer } from "../Components/NavAndFooter/Footer";
 import "../styles/phones.css";
 const Product = () => {
 
-  // console.log("total",total);
 
-  // const sortByPrice=()=>{
-  //   Data.sort((a,b)=>{
-  //   var ar= a.price.replace(/,/g,'').split('₹')[1]-b.price.replace(/,/g,'').split('₹')[1]
-  //   console.log(ar);
-  //   }
-  //   )
-
-  // }
 
   const CardItem = (item) => {
     
