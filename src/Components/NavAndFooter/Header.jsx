@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import "../../styles/header.css";
 
 export const Header = () => {
-
+  const {  cart } = useSelector((store) => ({...store}));
   const { currentUser } = useSelector((state) => state?.user);
   
   const dispatch = useDispatch();
@@ -163,7 +163,7 @@ export const Header = () => {
               <span>|</span>
             </li>
             <li>
-                <Link to="/Cart" className="tagHeader">Cart</Link>
+                <Link to="/Cart" className="tagHeader">Cart<span style={{color:"red"}}> ({cart.length})</span></Link>
                 
             </li>
           </ul>
