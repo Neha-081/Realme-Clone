@@ -24,7 +24,7 @@ useEffect(()=>{
     toast.success("You have successfully registered");
     navigate('/');
   }else if(registerFail===true){
-    toast.error("User already exist!!, Kindly Login");
+    toast.error("User already exist!! Kindly Login");
     navigate("/login")
   }
 },[currentUser, navigate,registerFail]);

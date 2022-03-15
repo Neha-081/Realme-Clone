@@ -4,12 +4,14 @@ import {useDispatch, useSelector} from 'react-redux';
 import { logoutInitiate } from '../../redux/userReducer/actions';
 import { toast } from "react-toastify";
 import "../../styles/header.css";
+import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const {  cart } = useSelector((store) => ({...store}));
   const { currentUser } = useSelector((state) => state?.user);
   
   const dispatch = useDispatch();
+  const navigate=useNavigate()
 
   const [navClass, setNavClass] = useState("navigation_bar");
   const [narzoClass, setNarzoClass] = useState("narzo_navigation_bar");
@@ -80,6 +82,7 @@ export const Header = () => {
     // if(currentUser){
       // console.log('enter -- ', currentUser)
       toast.success("You have successfully Logged out")
+      navigate("/")
       dispatch(logoutInitiate());
     // }
     };
