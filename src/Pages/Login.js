@@ -15,18 +15,19 @@ const{email, password} = state;
 
 const { currentUser } = useSelector((state) => state.user);
 const { loginFail } = useSelector((state) => state.user);
-console.log("log",loginFail);
+// console.log("log",loginFail);
 
 const navigate = useNavigate();
 
 useEffect(()=>{
-  if(currentUser && loginFail===false){
+  if(currentUser){
     toast.success("You have successfully logged In")
     navigate('/');
-  }else if(loginFail===true){
-    toast.error("Email/Password is Incorrect")
-navigate("/login")
   }
+//   else if(loginFail===true){
+//     toast.error("Email/Password is Incorrect")
+// navigate("/login")
+//   }
 },[currentUser, navigate,loginFail]);
 
 const dispatch = useDispatch();

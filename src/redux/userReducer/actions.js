@@ -1,5 +1,8 @@
 import * as types from "./actionTypes";
 import {auth, googleAuthProvider} from "../../firebase";
+import { toast } from "react-toastify";
+
+ 
 
 const registerStart = () => ({
     type: types.REGISTER_START,
@@ -83,6 +86,8 @@ export const registerInitiate = (email, password, displayName) => {
 };
 
 export const loginInitiate = (email, password ) => {
+   
+
     return function (dispatch) {
         dispatch(loginStart());
         auth
@@ -90,7 +95,15 @@ export const loginInitiate = (email, password ) => {
         .then(({ user }) => {
             dispatch(loginSuccess(user));
         })
-        .catch((error) => dispatch(loginFail(error.message)));
+        .catch((error) => {
+            
+            if(error.message==="Firebase: There is no user record corresponding to this identifier. The user may have been deleted. (auth/user-not-found)."){
+                toast.error("User must create account first!!")
+            }else if(error.message==="Firebase: The password is invalid or the user does not have a password. (auth/wrong-password)."){
+                toast.error("Invalid Password!!!")
+            }
+             console.log(error);
+             dispatch(loginFail(error.message))});
     };
 };
 
@@ -113,7 +126,7 @@ export const googleSignInInitiate = () => {
         auth
         .signInWithPopup(googleAuthProvider)
         .then(({ user }) => {
-            console.log(user,'resp resp resp  user ------>  ');
+            // console.log(user,'resp resp resp  user ------>  ');
             dispatch(googleSignInSuccess(user));
         })
         .catch((error) => dispatch(googleSignInFail(error.message)));

@@ -133,6 +133,8 @@ border-radius:10px;
   @media screen and (max-width: 500px) {
     #logreg-forms {
       width: 300px;
+    }   .block-signin,.block-newsignup{
+      width: 200px;
     }
   
     #logreg-forms .social-login {
@@ -161,3 +163,5 @@ border-radius:10px;
       content: "Google+";
     }
   }
+
+
