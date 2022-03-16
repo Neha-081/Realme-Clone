@@ -4,6 +4,7 @@ import Data from "../phones.json";
 import { Header } from "../Components/NavAndFooter/Header";
 import { Footer } from "../Components/NavAndFooter/Footer";
 import "../styles/phones.css";
+
 const Product = () => {
 
 
@@ -13,7 +14,7 @@ const Product = () => {
     return (
       <>
         <div className="card my-3" key={item.id} >
-          <Link to={`/phoneproducts/${item.id}`} style={{textDecoration:"none"}}>
+          <Link to={`/phoneproducts/${item.id}`} style={{textDecoration:"none"}} >
           <div>
           <img src={item.image_url} className="card-img-top phoneimg" alt={item.name} />
           <div className="card-body text-center">
