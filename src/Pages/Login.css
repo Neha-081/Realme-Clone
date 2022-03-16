@@ -133,6 +133,7 @@ border-radius:10px;
   @media screen and (max-width: 500px) {
     #logreg-forms {
       width: 300px;
+     margin-left: 25px;
     }   .block-signin,.block-newsignup{
       width: 200px;
     }

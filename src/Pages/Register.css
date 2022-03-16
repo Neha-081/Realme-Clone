@@ -112,6 +112,8 @@ color:grey;
     color:grey;
     font-size:12px;
     margin-left: 4px;
+  }#back{
+    margin: auto;
   }
   
   /* Mobile */
@@ -148,6 +150,12 @@ color:grey;
       content: "Google+";
     }#register-form .form-control{
       width: 320px;
+    }.Pass-data{   
+      width: 100%;
+      margin-left: 50px;
+      margin-top: 5px;
+    }.form-signup button,#back{
+      margin-left: 70px;
     }
   }
 
