@@ -60,7 +60,7 @@ const Register = () => {
       </Link>
       <div id="register-form">
         <form className="form-signup" onSubmit={handleSubmit}>
-          <h1 className="h3 mb-3 font-weight-normal" style={{ textAlign: "center" ,marginLeft:"35px"}}>
+          <h1 className="h3 mb-3 font-weight-normal" style={{ textAlign: "center" ,marginLeft:"25px"}}>
             Create Account
           </h1>
 
