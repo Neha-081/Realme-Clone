@@ -55,9 +55,12 @@ const Register = () => {
   };
   return (
     <div>
+        <Link to="/" style={{textDecoration:"none"}}>
+      <h1 className="realme">realme</h1>
+      </Link>
       <div id="register-form">
         <form className="form-signup" onSubmit={handleSubmit}>
-          <h1 className="h3 mb-3 font-weight-normal" style={{ textAlign: "center" }}>
+          <h1 className="h3 mb-3 font-weight-normal" style={{ textAlign: "center" ,marginLeft:"35px"}}>
             Create Account
           </h1>
 

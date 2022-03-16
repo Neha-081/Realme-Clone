@@ -5,6 +5,7 @@ import { googleSignInInitiate, loginInitiate } from '../redux/userReducer/action
 import "./Login.css";
 import { toast } from 'react-toastify';
 
+
 const Login=()=>{
   const [state, setState] = useState({
     email:'',
@@ -76,7 +77,9 @@ if(!email.includes(".")){
   };
   return (
     <div>
+      <Link to="/" style={{textDecoration:"none"}}>
       <h1 className="realme">realme</h1>
+      </Link>
         <div id= "logreg-forms">
           <form className="form-signin" onSubmit={handleSubmit}>
             <h1 className="h3 mb-3 font-weight-normal" style={{textAlign:"center"}}>
