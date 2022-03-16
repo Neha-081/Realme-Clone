@@ -181,5 +181,9 @@ padding-top: 80px;
      }.mainn{
          margin: 40px;
          margin-right: 0;
+     }.title{
+         margin-bottom: -30px;
+     }.tab-pane{
+       margin-right: 40px;
      }
 }
