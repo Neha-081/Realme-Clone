@@ -326,11 +326,20 @@
 
 
   @media  screen and (max-width: 400px) {
+
+    .footer{
+      overflow-x: hidden;
+
+
+    }
     .notResDiv,.footer-services,.footer-contact{
       display: none;
     }.footer-legal a:last-child{
       display: none;
     }.footer{
       padding-left: 14px;
+    }.footer-region{
+      display: none;
     }
+
   }
