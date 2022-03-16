@@ -62,7 +62,7 @@ const MyOrder = () => {
     </tr> */}
   </thead>
   <tbody>
-
+  {history.length ?     <div>
     {history.map((e)=>(
      <tr>
        <td>
@@ -73,6 +73,8 @@ const MyOrder = () => {
        <td className="price" >{e.price}</td>
      </tr>
     ))}
+    </div> : <h5>No Order</h5>}
+
     
   
   </tbody>
