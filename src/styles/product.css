@@ -135,5 +135,8 @@ outline: none;
    body{
        width: 350px;
        padding: 10px;
+   }.button{
+       margin-left: 30px;
+       
    }
 }
