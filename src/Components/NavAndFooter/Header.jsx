@@ -157,6 +157,9 @@ export const Header = () => {
 
           <div className="resposniveDiv">
           <ul>
+            
+            <Link to="/" className="realme-dupl" style={{textDecoration:"none"}}>  realme</Link>
+            
             <li>
               { currentUser ? <button className="logoutButton" onClick={handleAuth}>Logout</button> :  <Link className="tagHeader" to="/login">Login</Link> }
             
