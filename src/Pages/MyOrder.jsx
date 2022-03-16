@@ -47,7 +47,7 @@ const MyOrder = () => {
   </nav>
  
     <div className="box">
-    <div>
+    <div className="myOrders">
         My Orders
       </div>
     <div className="no-order">
