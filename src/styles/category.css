@@ -1,6 +1,7 @@
 #app { height: 100% }
 html,
 body {
+    
     overflow-x: hidden;
   position: relative;
   height: 100%;
@@ -146,6 +147,8 @@ padding-top: 80px;
     margin: 100px 200px 0 0;
 }.viewMore a{
    margin-left: 300px;
+}.swiper-button-prev{
+    padding: -10px;
 }
 
 
@@ -155,6 +158,7 @@ padding-top: 80px;
 @media  screen and (max-width: 670px) {
 
     .mySwiper{
+        
         width: 170%;
         padding: 30px;
     }.swiper-slide{
@@ -179,11 +183,15 @@ padding-top: 80px;
      }.nav-tabs{
        width: 320px;
      }.mainn{
+        background-color: rgb(250, 250, 249);
          margin: 40px;
          margin-right: 0;
+         margin-left: -15px;
      }.title{
          margin-bottom: -30px;
      }.tab-pane{
        margin-right: 40px;
-     }
+     }.swiper-button-prev,.swiper-button-next{
+visibility: hidden;
+    }
 }
