@@ -7,8 +7,7 @@
 
 
 
-> 
-> [Realme website](https://www.realme.com/in/)
+
  
 > We have cloned the Realme website as project of our construct week at **Masai School**.
 > We built this website fully responsive and implemented maximum design.
