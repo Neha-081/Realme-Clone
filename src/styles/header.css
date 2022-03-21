@@ -618,6 +618,8 @@ div {
       padding: 0 5px;
       border-radius: 0;
       margin-right: 15px;
+    }.logoutButton{
+      font-size: 10px;
     }
   }
   
