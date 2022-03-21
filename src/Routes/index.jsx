@@ -17,6 +17,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import MyOrder from "../Pages/MyOrder"
 
 const RoutesContainer = () => {
+  
 
   const { currentUser } = useSelector((state) => state.user);
   const isLoggedIn = currentUser;
@@ -26,7 +27,7 @@ const RoutesContainer = () => {
   return (
     <div>      
         <ToastContainer />
-        <Routes>
+        <Routes >
             <Route path="/" element={ <HomePage /> } />
             <Route path="/login" element={<Login />}/> 
             <Route path="/register" element={<Register />}/>    
