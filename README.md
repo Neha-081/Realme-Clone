@@ -5,12 +5,14 @@
 
 
 
+## Demo
 
+>Link - [Realme]()
 
 
  
-> We have cloned the Realme website as project of our construct week at **Masai School**.
-> We built this website fully responsive and implemented maximum design.
+> I have cloned the Realme website as project of my construct week at **Masai School**.
+> I built this website fully responsive and implemented maximum design.
  
   
 # Technology
@@ -92,9 +94,8 @@
 
  
 
-   6. On clicking **Buy Now**  button, a full screen billing modal will open which will take user to orders page once investment done.
+   6. On clicking **Buy Now**  button, a full screen Payment page will appear.
 
-![image](https://user-images.githubusercontent.com/76626095/131249873-59bb6b25-f621-4807-92e1-3f939b5b68a1.png)
 
 
 ![payment](https://user-images.githubusercontent.com/92449229/155889151-8a254e25-574d-46b5-8170-c55407d17bda.jpeg)
@@ -115,33 +116,10 @@
 
 
   
-## Demo
-
->Link - [Realme]()
-
-
   
-## Authors
+## Contact
 
-#### Santosh Konappanavar
-> Github: [Santosh Konappanavar](https://github.com/Santosh-Konappanavar)
-> 
-> LinkedIn: [Santosh Konappanavar](https://www.linkedin.com/in/santosh-konappanavar/)
-
-
-#### Neha Prajapati
-> Github: [Neha Prajapati](https://github.com/Neha-081)
-> 
-> LinkedIn: [Neha Prajapati](https://www.linkedin.com/in/neha-prajapati-1150/)
-
-
-#### Amruta Banait
-> Github: [Amruta Banait](https://github.com/amrutaBanait)
-> 
-> LinkedIn: [Amruta Banait](https://linkedin.com/in/amruta-banait)
-
-
-#### Anowar Hossain
-> Github: [Anowar Hossain](https://github.com/anowar265)
-> 
-> LinkedIn: [https://www.linkedin.com/in/hossainanowaroffical/)
+Feel free to reach me ->
+- Email - <nehaprajapati1150@gmail.com> 
+- LinkedIn - https://linkedin.com/in/neha-prajapati-1150
+- Twitter - https://twitter.com/NehaPra03810819
