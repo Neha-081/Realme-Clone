@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Link } from "react-router-dom";
-import ScrollToTop from "../../scrollToTop";
+
 import "../../styles/category.css";
 
 
