@@ -4,6 +4,7 @@ import Data from "../phones.json";
 import { Header } from "../Components/NavAndFooter/Header";
 import { Footer } from "../Components/NavAndFooter/Footer";
 import "../styles/phones.css";
+import ScrollToTop from "../scrollToTop";
 import { useSelector } from "react-redux";
 const MyOrder = () => {
   const history=useSelector(store=>store.history)
@@ -17,7 +18,7 @@ const MyOrder = () => {
       <>
 
         <div className="card my-3" key={item.id} >
-          <Link to={`/phoneproducts/${item.id}`} style={{textDecoration:"none"}}>
+          <Link to={`/phoneproducts/${item.id}`} style={{textDecoration:"none"}} onClick={ScrollToTop}>
           <div>
           <img src={item.image_url} className="card-img-top phoneimg" alt={item.name} />
           <div className="card-body text-center">

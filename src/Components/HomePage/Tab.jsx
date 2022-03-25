@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import ScrollToTop from "../../scrollToTop";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -41,7 +41,7 @@ function TabGroup({ data }) {
           <li>
           
             <span className="viewMore">
-            <Link to="/phoneproducts"  style={{textDecoration:"none",color:"#777777"}}  >
+            <Link to="/phoneproducts"  style={{textDecoration:"none",color:"#777777"}}  onClick={ScrollToTop}>
               
                 View More →
               </Link>
@@ -68,7 +68,7 @@ function TabGroup({ data }) {
                   .map((e) => (
                     <div key={e.id}>
                       <SwiperSlide>
-                      <Link to={`/category/${e.id}`} className="LinkTab" style={{textDecoration:"none"}}> 
+                      <Link to={`/category/${e.id}`} className="LinkTab" style={{textDecoration:"none"}} > 
                         <div>
                          {
                             e.tag? <h6 className="redtag">  {e.tag}</h6>:null

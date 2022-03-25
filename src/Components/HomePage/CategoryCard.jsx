@@ -1,12 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Link } from "react-router-dom";
-
-
-// import "./category.css";
+import ScrollToTop from "../../scrollToTop";
 import "../../styles/category.css";
 
 
@@ -39,7 +36,7 @@ export default function CategoryCard({ data }) {
         {data.filter((item) => item.category === "tv").map((e) => (
           <div key={e.id} >
 
-            <SwiperSlide className="mainn">
+            <SwiperSlide className="mainn" >
               <Link to={`/category/${e.id}`} className="LinkTab" style={{ textDecoration: "none" }}>
                 <div className="slider-div">
                   <img src={e.image_url} alt="productImage" />
