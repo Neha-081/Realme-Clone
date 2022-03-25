@@ -70,7 +70,7 @@ const PaymentPage = () => {
               <div className="owner">
                 <h3>Card Holder's Name</h3>
                 <div className="input-field">
-                  <input id="name" type="text" placeholder="Enter Your Name Here" />
+                  <input id="name" type="text" placeholder="Enter Your Name Here" autoFocus />
                 </div>
               </div>
               <div className="cvv">

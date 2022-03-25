@@ -91,6 +91,7 @@ if(!email.includes(".")){
               onChange={handleChange}
               value={email}
               required
+              autoFocus
               />
 
             <input
