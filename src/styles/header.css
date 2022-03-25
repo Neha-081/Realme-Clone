@@ -572,6 +572,10 @@ div {
     
   }.realme-dupl{
     visibility: hidden;
+  }.welcome{
+    color: #1c3b7e;
+    font-weight: bold;
+    margin-right: 5px;
   }
 
 
@@ -595,6 +599,8 @@ div {
       border-bottom: none;
     }.header_container .tag1 {
       background-color: #000;
+    }.welcome{
+      font-size: 11px;
     }
   }
 

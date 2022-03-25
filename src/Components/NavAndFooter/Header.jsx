@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 export const Header = () => {
   const {  cart } = useSelector((store) => ({...store}));
   const { currentUser } = useSelector((state) => state?.user);
+
   
   const dispatch = useDispatch();
   const navigate=useNavigate()
@@ -159,6 +160,13 @@ export const Header = () => {
           <ul>
             
             <Link to="/" className="realme-dupl" style={{textDecoration:"none"}}>  realme</Link>
+
+            <li className="welcome">
+                Welcome {currentUser.displayName}
+            </li>
+            <li>
+              <span>|</span>
+            </li>
             
             <li>
               { currentUser ? <button className="logoutButton" onClick={handleAuth}>Logout</button> :  <Link className="tagHeader" to="/login">Login</Link> }
@@ -169,7 +177,7 @@ export const Header = () => {
             </li>
             <li>
               <Link to="/myorder" className="tagHeader">
-                My Order
+                My Order 
               </Link>
             </li>
             <li>

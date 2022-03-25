@@ -67,9 +67,10 @@ function TabGroup({ data }) {
                   .filter((item) => item.category === "recommended" && item.id >16 && item.id <21)
                   .map((e) => (
                     <div key={e.id}>
-                      <SwiperSlide>
-                      <Link to={`/category/${e.id}`} className="LinkTab" style={{textDecoration:"none"}} > 
-                        <div>
+
+                      <SwiperSlide >
+                      <Link to={`/category/${e.id}`} className="LinkTab" style={{textDecoration:"none"}}> 
+                        <div >
                          {
                             e.tag? <h6 className="redtag">  {e.tag}</h6>:null
                          }
@@ -85,6 +86,7 @@ function TabGroup({ data }) {
                         </div>
                         </Link>
                       </SwiperSlide>
+
                     </div>
                   ))}
               </Swiper>

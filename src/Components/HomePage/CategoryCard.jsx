@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -8,10 +9,11 @@ import "../../styles/category.css";
 
 
 import { Pagination, Navigation } from "swiper";
+import ScrollToTop from "../../scrollToTop";
 
 export default function CategoryCard({ data }) {
 
-
+ 
 
   return (
 
@@ -37,7 +39,7 @@ export default function CategoryCard({ data }) {
           <div key={e.id} >
 
             <SwiperSlide className="mainn" >
-              <Link to={`/category/${e.id}`} className="LinkTab" style={{ textDecoration: "none" }}>
+              <Link to={`/category/${e.id}`} className="LinkTab" style={{ textDecoration: "none" }} >
                 <div className="slider-div">
                   <img src={e.image_url} alt="productImage" />
                   <h4 className="name">{e.name}</h4>
@@ -45,7 +47,7 @@ export default function CategoryCard({ data }) {
                   <h4 className="price">{e.price} <span className="cutprice">{e.cutPrice}</span></h4>
 
                 </div>
-              </Link>
+                </Link> 
             </SwiperSlide>
 
           </div>

@@ -15,6 +15,7 @@ const Login=()=>{
 const{email, password} = state;
 
 const { currentUser } = useSelector((state) => state.user);
+
 const { loginFail } = useSelector((state) => state.user);
 // console.log("log",loginFail);
 
@@ -75,6 +76,7 @@ if(!email.includes(".")){
     let {name, value} = e.target;
     setState({...state, [name]: value });
   };
+
   return (
     <div>
       <Link to="/" style={{textDecoration:"none"}}>
