@@ -162,6 +162,15 @@ border-radius:10px;
   
     #logreg-forms .google-btn:after {
       content: "Google+";
+    }#logreg-forms .google-btn{
+      height: 40px;
+      background-color: rgb(230, 120, 120);
+    }.block-signin{
+      background-color: rgb(136, 202, 127);
+      color: white;
+    }.block-newsignup{
+      background-color: rgb(139, 136, 136);
+      color: white;
     }
   }
 
