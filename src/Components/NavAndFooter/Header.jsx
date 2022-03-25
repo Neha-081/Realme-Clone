@@ -162,7 +162,7 @@ export const Header = () => {
             <Link to="/" className="realme-dupl" style={{textDecoration:"none"}}>  realme</Link>
 
             <li className="welcome">
-                Welcome {currentUser.displayName}
+                Welcome {currentUser.displayName.toUpperCase()}
             </li>
             <li>
               <span>|</span>
