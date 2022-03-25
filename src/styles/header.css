@@ -575,7 +575,7 @@ div {
   }.welcome{
     color: #1c3b7e;
     font-weight: bold;
-  }.welimg img{
+  }.welimg{
     height: 35px;
     width: 35px;
     border-radius: 50%;
@@ -584,6 +584,8 @@ div {
     border-bottom: none;
     outline: none;
   
+  }.noimg{
+    visibility: hidden;
   }
 
 
@@ -610,7 +612,7 @@ div {
     }.welcome{
       font-size: 8px;
       margin-top: 7px;
-    }.welimg img{
+    }.welimg {
       height: 20px;
       width: 20px;
       border-radius: 50%;
@@ -619,6 +621,8 @@ div {
       outline: none;
       background-color: white;
       margin-left: 0;
+    }.noimg{
+      visibility: hidden;
     }
   }
 

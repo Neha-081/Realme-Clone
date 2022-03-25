@@ -165,7 +165,8 @@ export const Header = () => {
               {currentUser? 
               <>
               <li>{currentUser.displayName.toUpperCase()}
-              <legend className="welimg"><img src={currentUser.photoURL} alt=""  /></legend>
+              <legend>{currentUser.photoURL ? <img src={currentUser.photoURL}  className="welimg"  alt="" />:<span className="noimg"></span>}
+                </legend>
               </li>    <li>
               <span>|</span>
             </li></> : ""
