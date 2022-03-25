@@ -600,7 +600,8 @@ div {
     }.header_container .tag1 {
       background-color: #000;
     }.welcome{
-      font-size: 9px;
+      font-size: 8px;
+      margin-top: 7px;
     }
   }
 
