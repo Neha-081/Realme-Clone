@@ -614,6 +614,9 @@ div {
       width: 20px;
       border-radius: 50%;
       margin-top: 9px;
+      border: hidden;
+      outline: none;
+      background-color: white;
     }
   }
 
