@@ -9,7 +9,6 @@ import "../../styles/category.css";
 
 
 import { Pagination, Navigation } from "swiper";
-import ScrollToTop from "../../scrollToTop";
 
 export default function CategoryCard({ data }) {
 
