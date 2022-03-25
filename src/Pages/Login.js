@@ -26,10 +26,7 @@ useEffect(()=>{
     toast.success("You have successfully logged In")
     navigate('/');
   }
-//   else if(loginFail===true){
-//     toast.error("Email/Password is Incorrect")
-// navigate("/login")
-//   }
+
 },[currentUser, navigate,loginFail]);
 
 const dispatch = useDispatch();
@@ -38,7 +35,7 @@ const dispatch = useDispatch();
 const handleGoogleSignIn = () => {
   dispatch(googleSignInInitiate());
 };
-// const handleFBSignIn = () => {};
+
 
   const handleSubmit =(e) =>{
     e.preventDefault();
@@ -58,11 +55,7 @@ if(!email.includes(".")){
   return toast.error("Please enter a valid email");
 }
 
- //if(!e.email){
- //return alert("Please enter a valid email");
-    
-// if(e.password !== password)
-// return alert("Please enter a valid password");
+
 
 
    dispatch(loginInitiate(email, password));
@@ -87,28 +80,7 @@ if(!email.includes(".")){
             <h1 className="h3 mb-3 font-weight-normal" style={{textAlign:"center"}}>
               Sign in
               </h1>
-              {/* <div className="social-login">
-                <button 
-                className="btn google-btn social-btn" 
-                type="button" 
-                onClick={handleGoogleSignIn}>
-
-                  <span>
-                    <i className="fab fa-google-plus-g"></i> Sign in with Google+
-                  </span>
-                  </button>
-
-                  <button 
-                className="btn facebook-btn social-btn" 
-                type="button" 
-                onClick={handleFBSignIn}>
-
-                  <span>
-                    <i className="fab fa-facebook-f"></i> Sign in with Facebook
-                  </span>
-                  </button>
-              </div> */}
-              {/* <p style={{textAlign:"center"}}>OR</p> */}
+              
               <p className="signwithpass">Sign in with password</p>
               <input
               type="email"
@@ -136,7 +108,6 @@ if(!email.includes(".")){
               </button>
             
                <hr/> 
-              {/* <p style={{textAlign:"center"}}>OR</p> */}
               <p className="otherstyle" style={{textAlign:"center"}}>Other ways to sign in</p>
               <div className="social-login">
                 <button 
@@ -149,15 +120,6 @@ if(!email.includes(".")){
                   </span>
                   </button>
 
-                  {/* <button 
-                className="btn facebook-btn social-btn" 
-                type="button" 
-                onClick={handleFBSignIn}>
-
-                  <span>
-                    <i className="fab fa-facebook-f"></i> Sign in with Facebook
-                  </span>
-                  </button> */}
               </div>
 
               <p className="otherstyle">Don't have an account</p>

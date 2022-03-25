@@ -164,7 +164,9 @@ export const Header = () => {
             <li className="welcome">
               {currentUser? 
               <>
-              <li>Welcome {currentUser.displayName.toUpperCase()}</li>    <li>
+              <li>{currentUser.displayName.toUpperCase()}
+              <legend className="welimg"><img src={currentUser.photoURL} alt=""  /></legend>
+              </li>    <li>
               <span>|</span>
             </li></> : ""
             }
