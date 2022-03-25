@@ -162,11 +162,15 @@ export const Header = () => {
             <Link to="/" className="realme-dupl" style={{textDecoration:"none"}}>  realme</Link>
 
             <li className="welcome">
-                Welcome {currentUser.displayName.toUpperCase()}
-            </li>
-            <li>
+              {currentUser? 
+              <>
+              <li>Welcome {currentUser.displayName.toUpperCase()}</li>    <li>
               <span>|</span>
+            </li></> : ""
+            }
+                
             </li>
+        
             
             <li>
               { currentUser ? <button className="logoutButton" onClick={handleAuth}>Logout</button> :  <Link className="tagHeader" to="/login">Login</Link> }
