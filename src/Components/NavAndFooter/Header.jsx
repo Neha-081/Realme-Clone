@@ -161,7 +161,7 @@ export const Header = () => {
             
             <Link to="/" className="realme-dupl" style={{textDecoration:"none"}}>  realme</Link>
 
-            <li className="welcome">
+            {/* <li className="welcome">
               {currentUser? 
               <>
               <li>Welcome {currentUser.displayName.toUpperCase()}</li>    <li>
@@ -169,7 +169,7 @@ export const Header = () => {
             </li></> : ""
             }
                 
-            </li>
+            </li> */}
         
             
             <li>
