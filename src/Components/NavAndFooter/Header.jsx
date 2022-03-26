@@ -162,9 +162,11 @@ export const Header = () => {
             <Link to="/" className="realme-dupl" style={{textDecoration:"none"}}>  realme</Link>
 
             <li className="welcome">
+            
               {currentUser? 
               <>
-              <li>{currentUser.email.split("@")[0].toUpperCase()}
+              <li>
+                <Link to="/myorder">{currentUser.email.split("@")[0].toUpperCase()}</Link>
               <legend>{currentUser.photoURL ? <img src={currentUser.photoURL}  className="welimg"  alt="" />:<span className="noimg"></span>}
                 </legend>
               </li>    <li>

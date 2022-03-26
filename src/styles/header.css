@@ -575,6 +575,7 @@ div {
   }.welcome{
     color: #1c3b7e;
     font-weight: bold;
+    cursor: pointer;
   }.welimg{
     height: 35px;
     width: 35px;
