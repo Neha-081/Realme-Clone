@@ -56,7 +56,6 @@ const Register = () => {
   };
   return (
     <div>
-      {JSON.stringify(state)}
         <Link to="/" style={{textDecoration:"none"}}>
       <h1 className="realme">realme</h1>
       </Link>
