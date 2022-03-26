@@ -76,6 +76,7 @@ export const registerInitiate = (email, password, displayName) => {
         .createUserWithEmailAndPassword(email, password)
         .then(({ user }) => {
 
+
          user.updateProfile({
                 displayName,
             });

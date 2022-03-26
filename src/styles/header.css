@@ -580,7 +580,7 @@ div {
     width: 35px;
     border-radius: 50%;
     margin-top: 21px;
-    margin-left: -15px;
+    margin-left: 5px;
     border-bottom: none;
     outline: none;
   
@@ -620,7 +620,6 @@ div {
       border: hidden;
       outline: none;
       background-color: white;
-      margin-left: 0;
     }.noimg{
       visibility: hidden;
     }

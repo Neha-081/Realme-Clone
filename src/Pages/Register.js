@@ -17,6 +17,7 @@ const Register = () => {
   const { currentUser } = useSelector((state) => state.user);
   const { registerFail } = useSelector((state) => state.user);
 
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -55,6 +56,7 @@ const Register = () => {
   };
   return (
     <div>
+      {JSON.stringify(state)}
         <Link to="/" style={{textDecoration:"none"}}>
       <h1 className="realme">realme</h1>
       </Link>

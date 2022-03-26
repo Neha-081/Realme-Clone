@@ -18,6 +18,7 @@ const loggedUser = {
 }
 
 const userReducer = (state=initialState,action)=>{  
+
     switch (action.type){
         case types.REGISTER_START:
             case types.LOGIN_START:
@@ -46,7 +47,7 @@ const userReducer = (state=initialState,action)=>{
 
             let isGoogleLogging = false;
 
-            if(types.GOOGLE_SIGN_IN_SUCCESS) {
+            if(types.GOOGLE_SIGN_IN_SUCCESS ) {
                 isGoogleLogging = true;
 
                 loggedUser.displayName = action.payload.displayName;

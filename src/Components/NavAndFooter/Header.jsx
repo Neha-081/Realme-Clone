@@ -164,7 +164,7 @@ export const Header = () => {
             <li className="welcome">
               {currentUser? 
               <>
-              <li>{currentUser.displayName.toUpperCase()}
+              <li>{currentUser.email.split("@")[0].toUpperCase()}
               <legend>{currentUser.photoURL ? <img src={currentUser.photoURL}  className="welimg"  alt="" />:<span className="noimg"></span>}
                 </legend>
               </li>    <li>
