@@ -18,9 +18,13 @@
 # Technology
 
 
-- **Client:** HTML5 and CSS
+- ReactJS
+- Redux
+- Firebase
+- CSS
+- Bootstrap
+- Redux Thunk
 
-- **Server:** Javascript 
 
 
 
@@ -28,10 +32,14 @@
   
 ## Features
 
--  User can see variety of Realme products and can select which Realme product to invest in
--  users data in local storage
--  Used keyframes for sliding effect
--  Responsive design
+- Social SignIn and SignUp with google Firebase authentication and
+complete validation.
+- Complete responsive website using media queries.
+- Fetching data with JSON server with Redux global state management.
+- Enables User to manage cart management system with features like
+add, remove.
+- Payment gateway system with full validation.
+- User order page management to view product detail and buy product.
 
 
 
